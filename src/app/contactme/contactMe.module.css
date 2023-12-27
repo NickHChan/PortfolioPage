@@ -1,0 +1,10 @@
+.contactMeBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactInfo{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+}

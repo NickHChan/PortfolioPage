@@ -1,0 +1,27 @@
+.ul {
+    width:80vw;
+    height: 5vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color:rgb(78, 81, 83);
+    border-radius: 5rem;
+}
+.li {
+    list-style: none;
+}
+
+.navBody{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    background-color: transparent;
+    border: transparent;
+}
+.button:hover{
+    cursor: pointer;
+    color: yellow;
+    font-size: 17px;
+}
