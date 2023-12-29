@@ -1,27 +1,26 @@
-.ul {
-    width:80vw;
-    height: 5vh;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    background-color:rgb(78, 81, 83);
-    border-radius: 5rem;
-}
-.li {
-    list-style: none;
-}
 
 .navBody{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 80%;
+    position: fixed;
+    margin: 4% auto;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 
 .button{
-    background-color: transparent;
+    font-size: 5rem;
+    background-color: #22223B;
+    padding: 0 1rem;
+    border-radius: 1rem;
     border: transparent;
+    color: #ffffff;
+    font-family: fantasy;
 }
 .button:hover{
     cursor: pointer;
-    color: yellow;
-    font-size: 17px;
+    color: #FFB84D;
+    scale: 1.2;
 }

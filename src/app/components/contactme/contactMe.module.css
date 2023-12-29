@@ -2,6 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    background-color: lightcoral;
+    padding: 3rem;
+    border-radius: 5rem;
+    scale: 1.5;
 }
 .contactInfo{
     width: 500px;

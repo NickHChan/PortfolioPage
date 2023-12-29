@@ -1,24 +1,15 @@
-import React from 'react'
-import Nav from './Nav';
+'use client'
+import React, {useContext} from 'react'
 import styles from "./NavBar.module.css"
-
-const navigationMenu: string[] = ["home", "projects", "contact"];
-
+import {ScrollContext} from '../../helper/scrollToContext'
 
 
 export default function NavBar() {
+const {scrollToProject} = useContext(ScrollContext)
   return (
     <div className={styles.navBody}>
-      <ul className={styles.ul}>
-        {
-          navigationMenu.map((menuItem, i) => {return (
-              <li key={i} className={styles.li}>
-                <Nav navItem={menuItem}/>
-              </li>
-          )
-})
-        }
-      </ul>
+      <button className={styles.button} onClick={scrollToProject}>N</button>
+      <button className={styles.button}>C</button>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image"
-import questionMark from '../../images/question_marks.svg'
+import questionMark from '../../../images/question_marks.svg'
 
 type Projects = {
     src: StaticImageData;
