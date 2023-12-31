@@ -9,7 +9,7 @@ export default function Achievement() {
         {
             listOfGames.map((game, i) => {
                 return(
-                    <div key={i} className={styles.gameRank}>
+                    <div key={i} className={styles[`gameRank${i}`]}>
                     <Article 
                     src={game.src}
                     alt={game.alt}
