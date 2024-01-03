@@ -11,7 +11,7 @@ export default function ContactMe() {
             <aside>
                 <h5>Nicholas Chan</h5>
                 <p>Email: <b>Nickharuchan@gmail.com</b></p>
-                <p>Github: <Link href='https://github.com/NickHChan' rel='noopener noreferral' target='_blank'><b>github.com/NickHChan</b></Link></p>
+                <p>Github: <Link href='https://github.com/NickHChan' rel='noopener noreferral' target='_blank' className={styles.link}>github.com/NickHChan</Link></p>
             </aside>
         </section>
     </div>

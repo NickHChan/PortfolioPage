@@ -13,3 +13,15 @@
     display: flex;
     justify-content: space-around;
 }
+
+.link,
+.link:visited,
+.link:active{
+    font-weight: bold;
+    text-decoration: none;
+    color: #22223B;
+}
+
+.link:hover{
+    color: rgb(240, 233, 145);
+}
