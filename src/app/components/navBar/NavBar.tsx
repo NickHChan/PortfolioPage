@@ -6,12 +6,12 @@ import {ScrollContext} from '../../helper/scrollToContext'
 
 export default function NavBar() {
 
-const {scrollToProject} = useContext(ScrollContext)
+const {scrollToTopPage} = useContext(ScrollContext)
 
 
   return (
     <div className={styles.navBody}>
-      <button className={styles.button} onClick={scrollToProject}>NC</button>
+      <button className={styles.button} onClick={scrollToTopPage}>NC</button>
     </div>
   )
 }

@@ -6,20 +6,20 @@ import Achievement from './components/achievement/Achievement'
 import Projects from './components/projects/Projects'
 import ContactMe from './components/contactme/ContactMe'
 import { ScrollContext } from './helper/scrollToContext'
-import { useState, useEffect } from 'react'
 
 export default function Home() {
-  const {projectsRef} = useContext(ScrollContext)
+  const { topPageRef, projectsRef, achievementRef, contactMeRef} = useContext(ScrollContext)
 
   return (
     <main className={styles.main}>
-
+      <section  ref={topPageRef}></section>
       In Development
       <MainArticle/>
       <section ref={projectsRef}></section>
         <Projects/>
-       <h6 className={styles.h6}>My Gaming Achievements</h6>
+       <h6 className={styles.h6} ref={achievementRef}>My Gaming Achievements</h6>
       <Achievement/>
+      <section ref={contactMeRef}></section>
       <ContactMe/>
     </main>
   )

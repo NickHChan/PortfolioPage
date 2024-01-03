@@ -1,15 +1,19 @@
 'use client'
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
 import styles from './Footer.module.css'
 import { motion } from 'framer-motion';
+import {ScrollContext} from '../../helper/scrollToContext'
 
 export default function Footer() {
-
+const {scrollToProject, scrollToAchievements, scrollToContactMe} = useContext(ScrollContext)
 const [isHover, toggleHover] = useState<boolean>(false);
 
-const toggleHoverMenu = () => {
-    toggleHover(!isHover)
+const toggleHoverMenuOn = () => {
+    toggleHover(true)
   }
+const toggleHoverMenuOff = () => {
+    toggleHover(false)
+}
 
 const subMenuAnimation = {
     show: {
@@ -39,19 +43,19 @@ const subMenuAnimation = {
         initial = 'close'
         animate={isHover ? 'show' : 'close'}
         variants={subMenuAnimation}
+        onHoverStart={toggleHoverMenuOn}
+        onHoverEnd={toggleHoverMenuOff}
         >
             <div className={styles.subMenuBG}>
-                <aside>
-                    <button className={styles.button}>Projects</button>
-                    <button className={styles.button}>Achievments</button>
-                    <button className={styles.button}>Contact Me</button>
-                </aside>
+                    <button className={styles.button} onClick={scrollToProject}>Projects</button>
+                    <button className={styles.button} onClick={scrollToAchievements}>Achievments</button>
+                    <button className={styles.button} onClick={scrollToContactMe}>Contact Me</button>
             </div>
         </motion.div>
         <motion.div 
         className={styles.hoverMenu}
-        onHoverStart={toggleHoverMenu}
-        onHoverEnd={toggleHoverMenu}
+        onHoverStart={toggleHoverMenuOn}
+        onHoverEnd={toggleHoverMenuOff}
         >+
         </motion.div>
     </footer>

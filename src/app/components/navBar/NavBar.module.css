@@ -4,9 +4,9 @@
     justify-content: space-between;
     width: 80%;
     position: fixed;
-    margin: 4% auto;
+    margin: 3.5% auto;
     left: 0;
-    right: 0;
+    right: 9%;
     z-index: 100;
 }
 

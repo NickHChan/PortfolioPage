@@ -5,7 +5,7 @@
     width: 80%;
     position: fixed;
     margin: 4% auto;
-    align-items: end;
+    align-items: flex-end;
     bottom: 0;
     left: 0;
     right: 0;
@@ -13,11 +13,12 @@
 }
 
 .hoverMenu{
+    display: flex;
+    justify-content: center;
     height: 90px;
-    width: 50px;
+    width: 80px;
     font-size: 5rem;
     background-color: #22223B;
-    padding: 0 1rem;
     border-radius: 1rem;
     border: transparent;
     color: #ffffff;
@@ -29,13 +30,25 @@
 }
 
 .subMenuBG{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     border-radius: 1rem;
     background-color: #22223B;
-    height: 100px;
+    height: 150px;
+    width: 150px;
+    border: 0.5rem solid #68ad19;
 }
+
 
 .button{
     background: none;
     color: white;
     border: none;
+}
+
+.button:hover{
+    cursor: pointer;
+    scale: 1.3;
+    color: #FFB84D;
 }
