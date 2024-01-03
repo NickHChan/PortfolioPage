@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import styles from './Article.module.css'
 import { StaticImageData } from 'next/image';
+import Link from 'next/link';
 
 type Props = {
     src: StaticImageData;
@@ -13,6 +14,7 @@ type Props = {
     addtional?: string;
 }
 
+
 export default function Article({src, alt, width, height, paragraph, styleName, addtional}:Props) {
   return (
     <article className={styles[styleName]}>
@@ -21,6 +23,7 @@ export default function Article({src, alt, width, height, paragraph, styleName, 
             alt={alt}
             width={width}
             height={height}
+            quality={80}
         />
         <p>
             {paragraph}

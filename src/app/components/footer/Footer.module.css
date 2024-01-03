@@ -1,0 +1,41 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 80%;
+    position: fixed;
+    margin: 4% auto;
+    align-items: end;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.hoverMenu{
+    height: 90px;
+    width: 50px;
+    font-size: 5rem;
+    background-color: #22223B;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    border: transparent;
+    color: #ffffff;
+    font-family: fantasy;
+}
+
+.hoverMenu:hover{
+    color: #FFB84D;
+}
+
+.subMenuBG{
+    border-radius: 1rem;
+    background-color: #22223B;
+    height: 100px;
+}
+
+.button{
+    background: none;
+    color: white;
+    border: none;
+}
