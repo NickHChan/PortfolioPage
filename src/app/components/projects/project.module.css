@@ -33,4 +33,78 @@
 .projectInfoContainer{
     display: flex;
     gap: 200vh;
+    position: relative;
+    left: 41.5%;
+}
+
+/*Media Queries only */
+/*640px*/
+@media only screen and (min-width: 40em){
+    .projectInfoContainer{
+        left: 45.5%;
+    }
+    .projectBody::before{
+        height: 280vh;
+    }
+    .projectBody::after{
+        height: 450vh;
+    }
+}
+/*768px*/
+@media only screen and (min-width: 48em){
+    .projectInfoContainer{
+        left: 44.9%;
+    }
+    .projectBody::before{
+        height: 280vh;
+    }
+    .projectBody::after{
+        height: 450vh;
+    }
+}
+/*1024px*/
+@media only screen and (min-width: 64em){
+    .projectInfoContainer{
+        left: 44.1%;
+    }
+    .projectBody::before{
+        height: 280vh;
+    }
+    .projectBody::after{
+        height: 450vh;
+    }
+}
+/*1280px*/
+@media only screen and (min-width: 80em){
+    .projectInfoContainer{
+        left: 43.4%;
+    }
+    .projectBody::before{
+        height: 280vh;
+    }
+    .projectBody::after{
+        height: 450vh;
+    }
+}
+@media only screen and (min-width: 96em){
+    .projectInfoContainer{
+        left: 42.1%;
+    }
+    .projectBody::before{
+        height: 280vh;
+    }
+    .projectBody::after{
+        height: 450vh;
+    }
+}
+@media only screen and (min-width: 112em){
+    .projectInfoContainer{
+        left: 41.1%;
+    }
+    .projectBody::before{
+        height: 280vh;
+    }
+    .projectBody::after{
+        height: 450vh;
+    }
 }

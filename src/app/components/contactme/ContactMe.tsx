@@ -16,7 +16,11 @@ const copiedPopUp = {
     display: "block"
   },
   hidden:{
-    opacity: 0
+    opacity: 0,
+    trasition:{
+      duration: 0.5,
+      delay: 0.5
+    }
   },
     transitionEnd:{
       display:"none"
