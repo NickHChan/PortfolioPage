@@ -6,8 +6,8 @@
     background-color: #C9ADA7;
     border: 0.1rem solid #394955;
     padding: 25px;
-    width: 45vw;
-    height: 66vh;
+    width: 500px;
+    height: 500px;
     margin-top: 5rem;
     border-radius: 2rem;
     text-align: center;
@@ -22,4 +22,11 @@
 }
 .link:hover{
     border: 0.5rem solid red;
+}
+
+@media(max-width:426px){
+    .projects{
+        width: 100px;
+        height: 100px   ;
+    }
 }

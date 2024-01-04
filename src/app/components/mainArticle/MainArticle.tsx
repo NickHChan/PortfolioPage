@@ -7,12 +7,13 @@ export default function MainArticle() {
     <Article
       src= {questionMark}
       alt='empty'
-      width={100}
-      height={100}
-      paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu condimentum leo, in euismod diam. Nam scelerisque et dolor ac fringilla. 
-      Cras vitae nulla egestas, cursus nibh quis, suscipit arcu. Vestibulum sed condimentum ante, id molestie erat. Donec posuere nisl nec orci 
-      vestibulum gravida. Suspendisse ut euismod lacus. Suspendisse vitae diam in neque scelerisque pharetra. Cras dictum risus sed vestibulum hendrerit. 
-      Curabitur feugiat nibh ac ultricies tincidunt. Phasellus sed ante euismod, cursus quam at, sagittis ipsum. Nunc dictum fringilla ex quis ornare.'
+      width={150}
+      height={150}
+      paragraph='Hello, I am Nick Chan, a dedicated web developer with a unique background in healthcare, and management. 
+      My journey into the world of technology is self-driven, marked by a passion for learning and mastering programming.
+       I am an enthusiastic gamer and have a appreciation for Psytrance music. 
+       Currently, I am immersed in the concept of computer science. My goal is to leverage this knowledge and passion for learning into
+      a successful and fulfilling career  .'
       styleName='main'
     />
   )

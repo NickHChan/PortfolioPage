@@ -1,30 +1,12 @@
 .projectBody{
-    height: 300vh;
+    height: 3000px;
 }
-.projectBody::before{
-    content: "";
-    height: 150vmax;
-    width: 1rem;
-    background-color: #9A8C98;
-    left: 0;
-    position: absolute;
-    z-index: 11;
-}
-.projectBody::after{
-    content: "";
-    height: 150vmax;
-    width: 1rem;
-    background-color: #9A8C98;
-    right: 0;
-    top: 0;
-    position: absolute;
-    z-index: 11;
-}
+
 .stickyBody{
     position: sticky;
     top: 0;
     display: flex;
-    height: 100vh;
+    height: 700px;
     overflow: hidden;
     align-items: center;
     margin-top: -4rem;
@@ -32,46 +14,7 @@
 /*Todo: set up media queries so that the container is centered with different monitor sizes */
 .projectInfoContainer{
     display: flex;
-    gap: 200vh;
+    gap: 1500px;
     position: relative;
-    left: 41.5%;
-}
-
-/* Media Queries */
-
-/* Mobile Devices */
-@media (max-width: 480px) {
-    .projectInfoContainer {
-        left: 46%;
-        gap: 100vh;
-    }
-}
-
-/* iPads and Tablets */
-@media (min-width: 481px) and (max-width: 768px) {
-    .projectInfoContainer {
-        left: 46.5%;
-        gap: 150vh;
-    }
-}
-
-/* Laptops and Small Screens */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .projectInfoContainer {
-        left: 45.5%;
-    }
-}
-
-/* Large Screens and Desktops */
-@media (min-width: 1025px) and (max-width: 1200px) {
-    .projectInfoContainer {
-        left: 42.5%;
-    }
-}
-
-/* TV and Extra Large Screens */
-@media (min-width: 1201px) {
-    .projectInfoContainer {
-        left: 42.5%;
-    }
+    left: 42.5%;
 }
