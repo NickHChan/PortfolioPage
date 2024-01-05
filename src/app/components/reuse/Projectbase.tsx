@@ -20,16 +20,14 @@ type Props = {
 export default function Project({src, alt, width, height, webLink, technologies, project_Name,role}:Props) {
   return (
     <section className={styles.projects}>
-      <Link href='https://allstars.staypluggedin.gg/' rel='noopener noreferrer' target='_blank' className={styles.link}>
+      <Link href={webLink} rel='noopener noreferrer' target='_blank' className={styles.link}>
         <Image
             src={src}
             alt={alt}
             width={width}
             height={height}
-            quality={80}
-            layout='responsive'
-            objectFit='cover'
-            objectPosition='center'
+            quality={90}
+            className={styles.image}
         />
         <p>
             {project_Name}

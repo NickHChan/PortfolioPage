@@ -28,8 +28,8 @@ export default function Projects() {
                   <ProjectBase 
                     src={project.src}
                     alt={project.alt}
-                    width={250}
-                    height={350}
+                    width={300}
+                    height={400}
                     project_Name={project.project_Name}
                     project_summary={project.project_summary}
                     technologies={project.technologies}
