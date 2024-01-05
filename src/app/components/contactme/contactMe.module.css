@@ -64,3 +64,42 @@
     border-radius: 15rem;
     z-index: -1;
 }
+
+@media (max-width: 1280px) {
+    .contactMeBody{
+        padding: 0.5rem;
+    }
+}
+/* lg */
+@media (max-width: 1024px) {
+    .contactMeBody{
+        padding: 0;
+    }
+}
+
+/* md */
+@media (max-width: 768px) {
+    .contactInfo{
+        width: 450px;
+        font-size: 14px;
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .contactMeBody{
+        border-radius: 2rem;
+    }
+    .contactInfo{
+        width: 350px;
+        font-size: 12px;
+    }
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .contactInfo{
+        width: 300px;
+        font-size: 8px;
+    }
+}

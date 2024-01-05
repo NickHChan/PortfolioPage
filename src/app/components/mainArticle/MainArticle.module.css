@@ -58,7 +58,6 @@
 @media (max-width: 475px) {
     .main{
         gap: 0;
-        width: 350px;
         flex-direction: column;
     }
 }
