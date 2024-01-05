@@ -27,6 +27,9 @@ export default function Project({src, alt, width, height, webLink, technologies,
             width={width}
             height={height}
             quality={80}
+            layout='responsive'
+            objectFit='cover'
+            objectPosition='center'
         />
         <p>
             {project_Name}

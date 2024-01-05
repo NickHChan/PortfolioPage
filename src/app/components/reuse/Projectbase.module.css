@@ -21,12 +21,5 @@
     color: #22223B;
 }
 .link:hover{
-    border: 0.5rem solid red;
-}
-
-@media(max-width:426px){
-    .projects{
-        width: 100px;
-        height: 100px   ;
-    }
+    border: 0.5rem solid #394955;
 }

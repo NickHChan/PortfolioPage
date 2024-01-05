@@ -5,9 +5,9 @@
     width: 80%;
     position: fixed;
     margin: 4% auto;
-    align-items: flex-end;
+    align-items: flex-start;
     bottom: 0;
-    left: 0;
+    left: -10%;
     right: 0;
     z-index: 100;
 }
@@ -15,9 +15,8 @@
 .hoverMenu{
     display: flex;
     justify-content: center;
-    height: 90px;
-    width: 80px;
     font-size: 5rem;
+    padding: 0.5rem 1rem;
     background-color: #22223B;
     border-radius: 1rem;
     border: transparent;
@@ -53,20 +52,52 @@
     color: #FFB84D;
 }
 
-@media (max-width:426px) {
+/* xl */
+@media (max-width: 1280px) {
     .footer{
-        align-items: flex-start;
-        top: 19%;
-        left: 20.5%;
+        margin: 10% auto;
     }
     .hoverMenu{
-        align-items: center;
-        font-size: 40px;
-        height: 60px;
-        width: 60px;
+        font-size: 4rem;
     }
-    .subMenuBG{
-        height: 100px;
-        width: 100px;
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .footer{
+        margin: 15% auto;
+    }
+    .hoverMenu{
+        font-size: 3rem;
+    }
+}
+
+/* md */
+@media (max-width: 768px) {
+    .footer{
+        margin: 18% auto;
+    }
+    .hoverMenu{
+        font-size: 2.5rem;
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .footer{
+        margin: 25% auto;
+    }
+    .hoverMenu{
+        font-size: 2rem;
+    }
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .footer{
+        margin: 100% auto;
+    }
+    .hoverMenu{
+        font-size: 1rem;
     }
 }

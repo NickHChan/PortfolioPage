@@ -1,26 +1,17 @@
-/* Media Queries */
+/* 2xl */
+@media (max-width: 1536px) {}
 
-/* Mobile Devices */
-@media (max-width: 480px) {
+/* xl */
+@media (max-width: 1280px) {}
 
-}
+/* lg */
+@media (max-width: 1024px) {}
 
-/* iPads and Tablets */
-@media (min-width: 481px) and (max-width: 768px) {
+/* md */
+@media (max-width: 768px) {}
 
-}
+/* sm */
+@media (max-width: 640px) {}
 
-/* Laptops and Small Screens */
-@media (min-width: 769px) and (max-width: 1024px) {
-
-}
-
-/* Large Screens and Desktops */
-@media (min-width: 1025px) and (max-width: 1200px) {
-
-}
-
-/* TV and Extra Large Screens */
-@media (min-width: 1201px) {
-
-}
+/* xs */
+@media (max-width: 475px) {}
