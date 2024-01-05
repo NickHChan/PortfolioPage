@@ -52,6 +52,11 @@
     color: #FFB84D;
 }
 
+@media (orientation: portrait){
+    .footer{
+        top: 0;
+    }
+}
 /* xl */
 @media (max-width: 1280px) {
     .footer{

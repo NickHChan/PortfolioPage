@@ -24,6 +24,7 @@ export default function Article({src, alt, width, height, paragraph, styleName, 
             width={width}
             height={height}
             quality={80}
+            className={styles.image}
         />
         <p>
             {paragraph}
