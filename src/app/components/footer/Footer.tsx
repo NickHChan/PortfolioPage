@@ -56,6 +56,7 @@ const subMenuAnimation = {
         className={styles.hoverMenu}
         onHoverStart={toggleHoverMenuOn}
         onHoverEnd={toggleHoverMenuOff}
+        onClick={toggleHoverMenuOn}
         >+
         </motion.div>
     </footer>

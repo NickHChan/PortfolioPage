@@ -55,7 +55,7 @@
 /* xl */
 @media (max-width: 1280px) {
     .footer{
-        margin: 10% auto;
+        margin: 15% auto;
     }
     .hoverMenu{
         font-size: 4rem;
@@ -65,7 +65,7 @@
 /* lg */
 @media (max-width: 1024px) {
     .footer{
-        margin: 15% auto;
+        margin: 25% auto;
     }
     .hoverMenu{
         font-size: 3rem;
@@ -75,7 +75,7 @@
 /* md */
 @media (max-width: 768px) {
     .footer{
-        margin: 18% auto;
+        margin: 50% auto;
     }
     .hoverMenu{
         font-size: 2.5rem;
@@ -85,7 +85,7 @@
 /* sm */
 @media (max-width: 640px) {
     .footer{
-        margin: 25% auto;
+        margin: 75% auto;
     }
     .hoverMenu{
         font-size: 2rem;
