@@ -32,7 +32,10 @@ export default function Projects() {
                     height={400}
                     project_Name={project.project_Name}
                     project_summary={project.project_summary}
-                    technologies={project.technologies}
+                    frameWork={project.frameWork}
+                    language={project.language}
+                    styling={project.styling}
+                    hosting={project.hosting}
                     role={project.role}
                     webLink={project.webLink}
                     works={project.works}

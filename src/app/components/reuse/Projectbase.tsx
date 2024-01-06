@@ -10,7 +10,10 @@ type Props = {
     width:number;
     height:number;
     webLink: string;
-    technologies: string;
+    frameWork: StaticImageData;
+    language: StaticImageData;
+    styling: StaticImageData;
+    hosting: StaticImageData;
     project_Name: string;
     project_summary: string;
     role: string;
@@ -18,7 +21,7 @@ type Props = {
 }
 
 
-export default function Project({src, alt, width, height, webLink, technologies, project_Name,role, works}:Props) {
+export default function Project({src, alt, width, height, webLink, frameWork, language, styling, hosting, project_Name,role, works}:Props) {
 
   return (
     <section className={styles.projects}>
@@ -36,12 +39,19 @@ export default function Project({src, alt, width, height, webLink, technologies,
             quality={100}
             className={styles.image}
         />
-      
-      
         <p>
             {project_Name}
             <br/>
-            {technologies}
+              <section className={styles.tech}>
+                <p>Framework:</p>
+                <Image src={frameWork} alt='list of framework(s) used' height={25} width={25}/>
+                <p>Language:</p>
+                <Image src={language} alt='list of coding language(s) used' height={25} width={25}/>
+                <p>Styling:</p>
+                <Image src={styling} alt='the way the website was styled' height={25} width={25}/>
+                <p>Hosting:</p>
+                <Image src={hosting} alt='the platform the website was hosted on' height={25} width={25}/>
+              </section>
             <br/>
             {role}
         </p>    
@@ -59,7 +69,16 @@ export default function Project({src, alt, width, height, webLink, technologies,
         <p>
             {project_Name}
             <br/>
-            {technologies}
+              <section className={styles.tech}>
+                <p>Framework:</p>
+                <Image src={frameWork} alt='list of framework(s) used' height={25} width={25}/>
+                <p>Language:</p>
+                <Image src={language} alt='list of coding language(s) used' height={25} width={25}/>
+                <p>Styling:</p>
+                <Image src={styling} alt='the way the website was styled' height={25} width={25}/>
+                <p>Hosting:</p>
+                <Image src={hosting} alt='the platform the website was hosted on' height={25} width={25}/>
+              </section>
             <br/>
             {role}
         </p>    

@@ -27,6 +27,13 @@
     border: 0.2rem solid ghostwhite;
     border-radius: 1rem;
 }
+.tech{
+    display: flex;
+    gap: 0.4rem;
+}
+.tech p {
+    margin-top: 0.5%;
+}
 
 
 /* lg */
