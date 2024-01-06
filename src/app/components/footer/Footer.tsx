@@ -37,6 +37,7 @@ const subMenuAnimation = {
     }
 }
 
+
   return (
     <footer className={styles.footer}>
          <motion.div
@@ -57,7 +58,12 @@ const subMenuAnimation = {
         onHoverStart={toggleHoverMenuOn}
         onHoverEnd={toggleHoverMenuOff}
         onClick={toggleHoverMenuOn}
-        >+
+        >
+                <motion.div
+                animate={{
+                    rotate: isHover ? 45 : 0
+                }}
+                >+</motion.div>
         </motion.div>
     </footer>
   )

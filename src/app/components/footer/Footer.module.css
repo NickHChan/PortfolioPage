@@ -34,8 +34,8 @@
     justify-content: space-evenly;
     border-radius: 1rem;
     background-color: #22223B;
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
     border: 0.5rem solid #68ad19;
 }
 
@@ -44,6 +44,7 @@
     background: none;
     color: white;
     border: none;
+    font-size: 18px;
 }
 
 .button:hover{
@@ -70,6 +71,10 @@
     .hoverMenu{
         font-size: 3rem;
     }
+    .subMenuBG{
+        height: 150px;
+        width: 150px;
+    }
 }
 
 /* md */
@@ -79,6 +84,13 @@
     }
     .hoverMenu{
         font-size: 2.5rem;
+    }
+    .subMenuBG{
+        height: 100px;
+        width: 100px;
+    }
+    .button{
+        font-size: 14px;
     }
 }
 
@@ -90,11 +102,24 @@
     .hoverMenu{
         font-size: 2rem;
     }
+    .subMenuBG{
+        position: relative;
+        top: 170px;
+        left: 20px;
+    }
+    .button{
+        font-size: 12px;
+    }
 }
 
 /* xs */
 @media (max-width: 475px) {
     .hoverMenu{
         font-size: 1rem;
+    }
+    .subMenuBG{
+        position: relative;
+        top: 150px;
+        left: 20px;
     }
 }
