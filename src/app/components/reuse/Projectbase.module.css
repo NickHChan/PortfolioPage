@@ -23,6 +23,10 @@
 .link:hover{
     scale: 1.02;
 }
+.image{
+    border: 0.2rem solid ghostwhite;
+    border-radius: 1rem;
+}
 
 
 /* lg */

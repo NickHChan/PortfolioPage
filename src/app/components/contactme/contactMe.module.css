@@ -27,6 +27,7 @@
 }
 
 .button{
+    font-family: monospace;
     background: none;
     border: none;
     font-weight: bold;

@@ -12,7 +12,7 @@ export default function Projects() {
     target: targetRef
   })
 
-  const x = useTransform(scrollYProgress,[0,1],['1%', '-115%'])
+  const x = useTransform(scrollYProgress,[0,1],['1%', '-118%'])
   const skewVelocity = useVelocity(scrollYProgress)
   const skew = useTransform(skewVelocity,[-1,-0.5,0,0.5,1],['10deg','5deg','0deg','-5deg','-10deg'],{ease: easeInOut})
 
@@ -28,13 +28,14 @@ export default function Projects() {
                   <ProjectBase 
                     src={project.src}
                     alt={project.alt}
-                    width={300}
+                    width={350}
                     height={400}
                     project_Name={project.project_Name}
                     project_summary={project.project_summary}
                     technologies={project.technologies}
                     role={project.role}
                     webLink={project.webLink}
+                    works={project.works}
                   />
                 </div>
               )

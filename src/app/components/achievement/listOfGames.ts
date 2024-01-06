@@ -2,6 +2,8 @@ import { StaticImageData } from 'next/image';
 import radiantImage from '../../../images/Radiant_Rank.webp'
 import diamondImage from '../../../images/Season_2019_-_Diamond_2.webp'
 import questionMark from '../../../images/question_marks.svg'
+import cs2Image from '../../../images/Cs2Rank.webp'
+import theFinalsImage from '../../../images/TheFinalsRank.webp'
 interface Games {
     src: StaticImageData;
     alt: string;
@@ -21,8 +23,8 @@ export const listOfGames: Games[] = [
         styleName: "rank",
     },
     {
-        src: questionMark,
-        alt: "Elo: 19,600",
+        src: cs2Image,
+        alt: "Elo: 20,376",
         width: 100,
         height: 100,
         paragraph: "Reached 19,600 Elo in Counter-Strike 2",
@@ -37,7 +39,7 @@ export const listOfGames: Games[] = [
         styleName: "rank",
     },
     {
-        src: questionMark,
+        src: theFinalsImage,
         alt: "TBD rank in The Finals",
         width: 100,
         height: 100,

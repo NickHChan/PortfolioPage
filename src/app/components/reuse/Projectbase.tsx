@@ -14,19 +14,46 @@ type Props = {
     project_Name: string;
     project_summary: string;
     role: string;
+    works: boolean;
 }
 
 
-export default function Project({src, alt, width, height, webLink, technologies, project_Name,role}:Props) {
+export default function Project({src, alt, width, height, webLink, technologies, project_Name,role, works}:Props) {
+
   return (
     <section className={styles.projects}>
-      <Link href={webLink} rel='noopener noreferrer' target='_blank' className={styles.link}>
+      
+      {
+        //ternary
+        works
+        //works is true render with link 
+        ? <Link href={webLink} rel='noopener noreferrer' target='_blank' className={styles.link}>
         <Image
             src={src}
             alt={alt}
             width={width}
             height={height}
-            quality={90}
+            quality={100}
+            className={styles.image}
+        />
+      
+      
+        <p>
+            {project_Name}
+            <br/>
+            {technologies}
+            <br/>
+            {role}
+        </p>    
+      </Link>
+      //works if false render without link
+      : <div>
+      <Image
+            src={src}
+            alt={alt}
+            width={width}
+            height={height}
+            quality={100}
             className={styles.image}
         />
         <p>
@@ -36,7 +63,8 @@ export default function Project({src, alt, width, height, webLink, technologies,
             <br/>
             {role}
         </p>    
-      </Link>
+      </div>
+  }
     </section>
   )
 }
