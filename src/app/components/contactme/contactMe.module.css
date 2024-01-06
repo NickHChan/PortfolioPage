@@ -84,6 +84,9 @@
         width: 450px;
         font-size: 14px;
     }
+    .button{
+        font-size: 14px;
+    }
 }
 
 /* sm */
@@ -95,12 +98,18 @@
         width: 350px;
         font-size: 12px;
     }
+    .button{
+        font-size: 12px;
+    }
 }
 
 /* xs */
 @media (max-width: 475px) {
     .contactInfo{
         width: 300px;
+        font-size: 8px;
+    }
+    .button{
         font-size: 8px;
     }
 }

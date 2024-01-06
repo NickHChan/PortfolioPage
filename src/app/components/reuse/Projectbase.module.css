@@ -72,7 +72,7 @@
 @media (max-width: 475px) {
     .projects{
         width: 200px;
-        height: 250px;
+        height: 270px;
         justify-content: space-around;
     }
     .image{

@@ -16,5 +16,39 @@
     display: flex;
     gap: 1500px;
     position: relative;
-    left: 42.5%;
+    left: 42.9%;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+    .projectInfoContainer{
+        left: 43.5%
+    }
+}
+/* lg */
+@media (max-width: 1024px) {
+    .projectInfoContainer{
+        left: 43.9%
+    }
+}
+
+/* md */
+@media (max-width: 768px) {
+    .projectInfoContainer{
+        left: 44.2%
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .projectInfoContainer{
+        left: 44.9%
+    }
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .projectInfoContainer{
+        left: 45.2%
+    }
 }
