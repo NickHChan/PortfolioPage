@@ -1,4 +1,4 @@
-export const onLightnessChange = (lightness, setHue, setSaturation) => {
+export const onLightnessChange = (lightness, setHue, setSaturation, setIsDay) => {
 
   if (lightness <= 85) {
     setHue(44)
@@ -17,22 +17,27 @@ export const onLightnessChange = (lightness, setHue, setSaturation) => {
   }
   if (lightness <= 60) {
     setHue(34)
-    setSaturation(100)
   }
   if (lightness <= 55) {
     setHue(32)
-    setSaturation(80)
+    setSaturation(100)
   }
   if (lightness <= 50) {
     setHue(30)
-    setSaturation(60)
+    setSaturation(80)
   }
   if (lightness <= 45) {
     setHue(236)
-    setSaturation(40)
+    setSaturation(60)
   }
   if (lightness <= 40) {
     setHue(240)
+    setIsDay(true)
+    setSaturation(40)
+  }
+  if (lightness <= 35) {
+    setHue(240)
+    setIsDay(false)
     setSaturation(20)
   }
 }
