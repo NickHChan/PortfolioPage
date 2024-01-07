@@ -12,16 +12,16 @@
 
 .button{
     font-size: 5rem;
-    background-color: #22223B;
+    background-color: #495867ff;
     padding: 0 1rem;
     border-radius: 1rem;
     border: transparent;
-    color: #ffffff;
+    color: #f7f7ffff;
     font-family: fantasy;
 }
 .button:hover{
     cursor: pointer;
-    color: #FFB84D;
+    color: rgb(240, 233, 145);
     scale: 1.2;
 }
 

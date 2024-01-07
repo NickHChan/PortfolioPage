@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #C9ADA7;
-    border: 0.1rem solid #394955;
+    background-color: #fbabaaff;
+    border: 0.2rem solid #42505eff;
     padding: 25px;
     width: 1000px;
     height: 500px;
@@ -28,7 +28,7 @@
 .linkDisabled:visited,
 .linkDisableds:active  {
     text-decoration: none;
-    color: #22223B;
+    color: #42505eff;
 }
 .linkDisabled{
     pointer-events: none;

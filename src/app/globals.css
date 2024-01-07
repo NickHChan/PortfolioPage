@@ -1,5 +1,17 @@
-
+root{
+  --charcoal: #42505eff;
+  --paynes-gray: #495867ff;
+  --glaucous: #577399ff;
+  --air-superiority-blue: #8aa4c2ff;
+  --columbia-blue: #bdd5eaff;
+  --alice-blue: #dae6f5ff;
+  --ghost-white: #f7f7ffff;
+  --tea-rose-red: #f9d1d5ff;
+  --melon: #fbabaaff;
+  --bittersweet: #fe5f55ff;
+  --link-hover: rgb(240, 233, 145)
+}
 body{
-  color: #22223B;
+  color: #42505eff;
   overflow-x: hidden;
 }
