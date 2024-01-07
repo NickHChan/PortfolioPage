@@ -23,17 +23,20 @@ export default function Home() {
   }
 
   useEffect(()=>{
-   
-
     window.addEventListener('scroll', handleOnScroll, {passive: true})
     onLightnessChange(lightness, setHue,setSaturation);
-    console.log(lightness)
 
     return(()=>{
       window.removeEventListener('scroll', handleOnScroll)
     })
   },[lightness])
 
+  //Scrolls to top of page if user refreshes the page
+  useEffect(()=>{
+    window.onbeforeunload = function(){
+      window.scrollTo(0, 0);
+    }
+  },[])
 
 
 
