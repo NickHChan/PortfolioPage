@@ -12,8 +12,8 @@ import {onLightnessChange} from './helper/lightnessChangeFunction'
 export default function Home() {
   const [hue, setHue] = useState<number>(44);
   const [saturation, setSaturation] = useState<number>(100);
-  const [lightness, setLightness] = useState<number>(100);
-  const [isDay, setIsDay] = useState<boolean>(true);
+  const [lightness, setLightness] = useState<number>(90);
+  const [isDay, setIsDay] = useState<'day' | 'midDay' | 'night'>('day');
   const { topPageRef, projectsRef, achievementRef, contactMeRef} = useContext(ScrollContext)
 
   const handleOnScroll = () => {
@@ -43,7 +43,7 @@ export default function Home() {
 
 
   return (
-    <main className={isDay ? styles.mainDay : styles.mainNight} style={{backgroundColor:`hsl(${hue},${saturation}%,${lightness}%)`}}>
+    <main className={isDay === 'day' ? styles.mainDay : (isDay === 'night' ? styles.mainNight : styles.mainmidDay)} style={{backgroundColor:`hsl(${hue},${saturation}%,${lightness}%)`}}>
       <section  ref={topPageRef}></section>
       In Development
       <MainArticle/>

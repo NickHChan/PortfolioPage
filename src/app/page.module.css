@@ -1,11 +1,38 @@
-.mainDay {
+
+.mainDay,
+.mainmidDay {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
   margin: -2rem;
-  background-image: url('../images/cloudsBg.svg');
+  background-image: url('../images/clouds.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.mainDay::before{
+  position:fixed;
+  top: 3%;
+  right: 5%; 
+  width: 100px;
+  height: 100px;
+  scale: 1.5;
+  content: "";
+  background-image: url('../images/sun.svg');
+  background-repeat: no-repeat;
+}
+
+.mainmidDay::before{
+  position:fixed;
+  top: 40%;
+  right: 2.5%; 
+  width: 150px;
+  height: 150px;
+  scale: 0.75;
+  content: "";
+  transform: rotate(30deg);
+  background-image: url('../images/midDay.svg');
   background-repeat: no-repeat;
 }
 
@@ -17,6 +44,17 @@
   min-height: 100vh;
   margin: -2rem;
   background-image: url('../images/starsBg.svg');
+}
+.mainNight::before{
+  position:fixed;
+  bottom: 3%;
+  right: 3%;
+  scale: 0.75; 
+  width: 150px;
+  height: 150px;
+  content: "";
+  background-image: url('../images/moon.svg');
+  background-repeat: no-repeat;
 }
 
 .h6{

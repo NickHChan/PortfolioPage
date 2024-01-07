@@ -22,7 +22,7 @@ type Props = {
 }
 
 
-export default function Project({src, alt, width, height, webLink, frameWork, language, styling, hosting, project_Name,role, linkworks}:Props) {
+export default function Project({src, alt, width, height, webLink, frameWork, language, styling, hosting, project_Name,role, linkworks, project_summary}:Props) {
 
   return (
     <section className={styles.projects}>
@@ -35,7 +35,7 @@ export default function Project({src, alt, width, height, webLink, frameWork, la
             quality={100}
             className={styles.image}
         />
-        <div>
+        <section className={styles.projectInfo}>
             {project_Name}
             <br/>
               <section className={styles.tech}>   
@@ -48,9 +48,12 @@ export default function Project({src, alt, width, height, webLink, frameWork, la
                 <p>Hosting:</p>
                 <Image src={hosting} alt='the platform the website was hosted on' height={25} width={25}/>
               </section>
-            <br/>
+            <br />
             {role}
-        </div>    
+            <span>
+            {project_summary}
+            </span>
+        </section>    
       </Link>
     </section>
   )
