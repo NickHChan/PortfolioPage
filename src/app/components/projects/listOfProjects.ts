@@ -24,7 +24,7 @@ type Projects = {
     project_summary: string;
     role: string;
     webLink: string;
-    works: boolean;
+    linkworks: boolean;
 }
 
 export const listOfProjects: Projects[] = [
@@ -39,7 +39,7 @@ export const listOfProjects: Projects[] = [
         project_summary: `A website used to display a list of movie actors in a movie to help users train for Cine2Nerdle's new battle mode`,
         role: 'Role: Solo-Developer Work',
         webLink: '',
-        works: false
+        linkworks: false
     },
 
     {
@@ -53,7 +53,7 @@ export const listOfProjects: Projects[] = [
         project_summary: 'A website about a coca-cola sponsored e-sports event that includes games being played, dates, and co-streamers',
         role: 'Role: Volunteer Developer',
         webLink: 'https://allstars.staypluggedin.gg/',
-        works: true
+        linkworks: true
     },
 
     {
@@ -67,6 +67,6 @@ export const listOfProjects: Projects[] = [
         project_summary: 'A website that plays a word travia game where users have to guess the word that is connected to the previous word',
         role: 'Role: Junior Front-End Developer',
         webLink: '',
-        works: false
+        linkworks: false
     }
 ]

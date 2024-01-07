@@ -14,11 +14,18 @@
 }
 
 .link,
-.link:link
+.link:link,
 .link:visited,
-.link:active {
+.link:active,
+.linkDisabled,
+.linkDisabled:link,
+.linkDisabled:visited,
+.linkDisableds:active  {
     text-decoration: none;
     color: #22223B;
+}
+.linkDisabled{
+    pointer-events: none;
 }
 .link:hover{
     scale: 1.02;

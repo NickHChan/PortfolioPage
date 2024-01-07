@@ -38,7 +38,7 @@ export default function Projects() {
                     hosting={project.hosting}
                     role={project.role}
                     webLink={project.webLink}
-                    works={project.works}
+                    linkworks={project.linkworks}
                   />
                 </div>
               )
