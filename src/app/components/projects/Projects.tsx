@@ -28,7 +28,7 @@ export default function Projects() {
                   <ProjectBase 
                     src={project.src}
                     alt={project.alt}
-                    width={580}
+                    width={400}
                     height={500}
                     project_Name={project.project_Name}
                     project_summary={project.project_summary}

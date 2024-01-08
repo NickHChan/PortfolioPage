@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #fbabaaff;
-    border: 0.2rem solid #42505eff;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 0.2rem solid rgba(66, 80, 94, 0.2);
     padding: 25px;
     width: 1000px;
     height: 500px;

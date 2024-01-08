@@ -1,13 +1,11 @@
 .achievenmentGrid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
-        "one two three"
-        "four five six";
+        "one two three four";
     gap: 2rem;
     margin-bottom: 70vh;
-    background-color: #f9d1d5ff;
     padding: 3rem 1.2rem;
     border-radius: 3rem;
 }
@@ -22,5 +20,5 @@
     grid-area: three;
 }
 .gameRank3{
-    grid-area: five;
+    grid-area: four;
 }
