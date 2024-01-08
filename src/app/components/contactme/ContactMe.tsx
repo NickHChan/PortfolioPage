@@ -45,11 +45,10 @@ const copiedPopUp = {
 
   return (
     <div className={styles.contactMeBody}>
-        <h4>Contact Me</h4>
+        <h3 className={styles.title}>Contact Me</h3>
         <section className={styles.contactInfo}>
             <div>Image Box</div>
             <aside>
-                <h5>Nicholas Chan</h5>
                 <motion.div
                 initial='hidden'
                 animate={copied ? 'show' : 'hidden'}
