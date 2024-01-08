@@ -36,9 +36,10 @@ export default function Project({src, alt, width, height, webLink, frameWork, la
             className={styles.image}
         />
         <section className={styles.projectInfo}>
+          <header className={styles.header}>
             {project_Name}
-            <br/>
-              <section className={styles.tech}>   
+          </header>
+          <section className={styles.tech}>   
                 <p>Framework:</p>
                 <Image src={frameWork} alt='list of framework(s) used' height={25} width={25}/>
                 <p>Language:</p>
@@ -47,12 +48,13 @@ export default function Project({src, alt, width, height, webLink, frameWork, la
                 <Image src={styling} alt='the way the website was styled' height={25} width={25}/>
                 <p>Hosting:</p>
                 <Image src={hosting} alt='the platform the website was hosted on' height={25} width={25}/>
-              </section>
-            <br />
-            {role}
-            <span>
+           </section>
+           <section>
+              {role}
+           </section>
+           <summary>
             {project_summary}
-            </span>
+           </summary>
         </section>    
       </Link>
     </section>
