@@ -14,45 +14,135 @@ const toggleHoverMenuOn = () => {
 const toggleHoverMenuOff = () => {
     toggleHover(false)
 }
-
-const subMenuAnimation = {
+const subMenuAnimationBase = {
     show: {
         opacity: 1,
-        rotateX: 0,
+        transform: "translateY(110px)",
         transition:{
-            duration: 0.5
+            duration: 1
         },
         display: "block"
     },
     close:{
         opacity: 0,
-        rotateX: -15,
+        transform: "translateY(-110px)",
         transition:{
-            duration: 0.5,
-            delay: 0.5
+            duration: 1
         },
     transitionEnd:{
         display: 'none'
     }   
     }
 }
-
-
+const subMenuAnimation = {
+    show: {
+        opacity: 1,
+        transform: "translateY(-75px)",
+        transition:{
+            duration: 0.5,
+            delay: 0.1
+        },
+        display: "block"
+    },
+    close:{
+        opacity: 0,
+        transform: "translateY(75px)",
+        transition:{
+            duration: 0.5,
+            delay: 0.5
+        },
+    },
+    transitionEnd:{
+        display: 'none'
+    }   
+}
+const subMenuAnimation2 = {
+    show: {
+        opacity: 1,
+        transform: "translateY(-50px)",
+        transition:{
+            duration: 0.5,
+            delay: 0.3
+        },
+        display: "block"
+    },
+    close:{
+        opacity: 0,
+        transform: "translateY(50px)",
+        transition:{
+            duration: 0.3,
+            delay: 0.3
+        },
+    },
+    transitionEnd:{
+        display: 'none'
+    }   
+}
+const subMenuAnimation3 = {
+    show: {
+        opacity: 1,
+        transform: "translateY(-25px)",
+        transition:{
+            duration: 0.5,
+            delay: 0.5
+        },
+        display: "block"
+    },
+    close:{
+        opacity: 0,
+        transform: "translateY(25px)",
+        transition:{
+            duration: 0.3,
+            delay: 0.1
+        },
+    },
+    transitionEnd:{
+        display: 'none'
+    }   
+}
   return (
     <footer className={styles.footer}>
-         <motion.div
-        initial = 'close'
-        animate={isHover ? 'show' : 'close'}
-        variants={subMenuAnimation}
-        onHoverStart={toggleHoverMenuOn}
-        onHoverEnd={toggleHoverMenuOff}
-        >
-            <div className={styles.subMenuBG}>
-                    <button className={styles.button} onClick={scrollToProject}>Projects</button>
-                    <button className={styles.button} onClick={scrollToAchievements}>Achievments</button>
-                    <button className={styles.button} onClick={scrollToContactMe}>Contact Me</button>
-            </div>
-        </motion.div>
+          <motion.div
+            initial = 'close'
+            animate={isHover ? 'show' : 'close'}
+            variants={subMenuAnimationBase}
+            onHoverStart={toggleHoverMenuOn}
+            onHoverEnd={toggleHoverMenuOff}
+            className={styles.subMenuBG}
+            >
+            </motion.div>
+            <section className={styles.subMenuButtonContainer}>
+                    <motion.div
+                        initial = 'close'
+                        animate={isHover ? 'show' : 'close'}
+                        variants={subMenuAnimation}
+                        onHoverStart={toggleHoverMenuOn}
+                        onHoverEnd={toggleHoverMenuOff}
+                        >
+                        <button className={styles.button} onClick={scrollToProject}>Projects</button>
+                    </motion.div>
+                    <motion.div
+                        initial = 'close'
+                        animate={isHover ? 'show' : 'close'}
+                        variants={subMenuAnimation2}
+                        onHoverStart={toggleHoverMenuOn}
+                        onHoverEnd={toggleHoverMenuOff}
+                        >
+                        <button className={styles.button} onClick={scrollToAchievements}>Achievments</button>
+                    </motion.div>
+                    <motion.div
+                        initial = 'close'
+                        animate={isHover ? 'show' : 'close'}
+                        variants={subMenuAnimation3}
+                        onHoverStart={toggleHoverMenuOn}
+                        onHoverEnd={toggleHoverMenuOff}
+                        >
+                        <button className={styles.button} onClick={scrollToContactMe}>Contact Me</button>
+                    </motion.div>            
+            </section>
+
+
+
         <motion.div 
         className={styles.hoverMenu}
         onHoverStart={toggleHoverMenuOn}

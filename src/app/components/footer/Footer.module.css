@@ -2,11 +2,12 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 20%;
+    width: fit-content;
+    height: fit-content;
     position: fixed;
     margin: 4% auto;
     align-items: flex-end;
-    bottom: 17.9%;
+    bottom: 9%;
     right: 8%;
     z-index: 100;
 }
@@ -27,29 +28,31 @@
     color: rgb(240, 233, 145);
 }
 
-.subMenuBG{
+.subMenuButtonContainer{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    border-radius: 1rem;
-    background-color: #577399ff;
-    height: 250px;
-    width: 250px;
-    border: 0.5rem solid #bdd5eaff;
+    align-items: center;
+    margin-right: -4rem;
+}
+.subMenuBG{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    margin-right: -4.5rem;
 }
 
-
 .button{
-    background: none;
-    color: #f9d1d5ff;
+    background-color:transparent;
+    color: #fe5f55ff;
     border: none;
-    font-size: 18px;
+    height: 20px;
+    font-size: 30px;
 }
 
 .button:hover{
     cursor: pointer;
     scale: 1.3;
-    color: #FFB84D;
+    color: #8aa4c2ff;
 }
 
 /* xl */

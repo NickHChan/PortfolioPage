@@ -25,20 +25,20 @@ export const onLightnessChange = (lightness, setHue, setSaturation, setIsDay) =>
   if (lightness <= 50) {
     setHue(30)
     setSaturation(80)
+    setIsDay('day')
   }
   if (lightness <= 45) {
     setHue(236)
-    setSaturation(60)
-    setIsDay('day')
+    setSaturation(50)
+    setIsDay('midDay')
   }
   if (lightness <= 40) {
     setHue(240)
-    setIsDay('midDay')
+    setIsDay('night')
     setSaturation(40)
   }
   if (lightness <= 35) {
     setHue(240)
-    setIsDay('night')
     setSaturation(20)
   }
 }
