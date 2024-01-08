@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
 .footer{
     display: flex;
     justify-content: space-between;
@@ -42,6 +44,7 @@
 }
 
 .button{
+    font-family: 'Raleway', Georgia, 'Times New Roman', Times, serif;
     background-color:transparent;
     color: #fe5f55ff;
     border: none;

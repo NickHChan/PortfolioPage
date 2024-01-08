@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 
 .navBody{
     display: flex;
@@ -19,7 +20,7 @@
     border-radius: 1rem;
     border: transparent;
     color: #f7f7ffff;
-    font-family: fantasy;
+    font-family: 'Raleway', Georgia, 'Times New Roman', Times, serif;
 }
 .button:hover{
     cursor: pointer;
