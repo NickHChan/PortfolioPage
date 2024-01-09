@@ -1,5 +1,4 @@
 import React from 'react';
-import Article from '../reuse/Article';
 import questionMark from '../../../images/question_marks.svg'
 import displayPic from '../../../images/DisplayPic.webp'
 import Image from 'next/image';

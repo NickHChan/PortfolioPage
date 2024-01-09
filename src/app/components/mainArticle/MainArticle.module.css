@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 7rem;
+    gap: 2rem;
     font-size: 1.5rem;
     margin-bottom: 25rem;
     text-indent: 12% hanging;
@@ -17,55 +17,37 @@
 
 @media (max-width: 1280px) {
     .main{
-        gap: 5rem;
-        width: 700px;
-    }
-    .rank{
-        height: 250px;
-        width: 150px;
+        font-size: 1.25rem;
     }
 }
 
 /* lg */
 @media (max-width: 1024px) {
     .main{
-        gap: 3rem;
-        width: 550px;
         flex-direction: column;
     }
-    .rank{
-        height: 250px;
-        width: 100px;
-        gap: 0;
+    .image{
+        height: 300px;
+        width: 250px;
     }
 }
 
 /* md */
 @media (max-width: 768px) {
     .main{
-        gap: 0;
-        width: 350px;
-        flex-direction: column;
+        font-size: 1rem;
     }
     .image{
-        height: 50px;
-        width: 50px;
+        height: 250px;
+        width: 200px;
     }
 }
 
 /* sm */
 @media (max-width: 640px) {
-    .main{
-        gap: 0;
-        width: 150px;
-        flex-direction: column;
-    }
 }
 
 /* xs */
 @media (max-width: 475px) {
-    .main{
-        gap: 0;
-        flex-direction: column;
-    }
+
 }
