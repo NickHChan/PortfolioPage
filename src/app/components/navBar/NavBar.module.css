@@ -30,49 +30,21 @@
 /* xl */
 @media (max-width: 1280px) {
     .navBody{
-        margin: 10% auto;
-    }
-    .button{
-        font-size: 4rem;
-    }
-}
-
-/* lg */
-@media (max-width: 1024px) {
-    .navBody{
-        margin: 20% auto;
-    }
-    .button{
-        font-size: 3rem;
-    }
-}
-
-/* md */
-@media (max-width: 768px) {
-    .navBody{
-        margin: 30% auto;
-    }
-    .button{
-        font-size: 2.5rem;
-    }
-}
-
-/* sm */
-@media (max-width: 640px) {
-    .navBody{
-        margin: 40% auto;
+        top: 19.2%
     }
     .button{
         font-size: 2rem;
     }
 }
 
-/* xs */
-@media (max-width: 475px) {
+@media (max-width: 1090px){
     .navBody{
-        margin: 45% auto;
+        right: 0.5%;
     }
-    .button{
-        font-size: 1rem;
+} 
+
+@media (max-width: 768px) {
+    .navBody{
+        top: 30%;
     }
 }
