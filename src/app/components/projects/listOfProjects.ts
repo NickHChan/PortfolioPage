@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image"
 import questionMark from '../../../images/question_marks.svg'
-import allStarsImg from '../../../images/allstars.staypluggedin.gg.webp'
+import allStarsImg from '../../../images/allstars.staypluggedin.ggV2.webp'
 import chainLImage from '../../../images/ChainLPicture.webp'
 import cineTrainerImage from '../../../images/CineTrainerPic.webp'
 import nextJsSvg from '../../../images/svg/nextjs-icon-svgrepo-com.svg'
@@ -37,7 +37,7 @@ export const listOfProjects: Projects[] = [
         hosting: vercelSvg,
         project_Name: 'CineTrainer',
         project_summary: `A website used to display a list of movie actors in a movie to help users train for Cine2Nerdle's new battle mode`,
-        role: 'Role: Solo-Developer Work',
+        role: 'Solo-Developer Work',
         webLink: '',
         linkworks: false
     },
@@ -51,7 +51,7 @@ export const listOfProjects: Projects[] = [
         hosting: vercelSvg,
         project_Name: 'Allstars.staypluggedin.gg',
         project_summary: 'A website about a coca-cola sponsored e-sports event that includes games being played, dates, and co-streamers',
-        role: 'Role: Volunteer Developer',
+        role: 'Volunteer Developer',
         webLink: 'https://allstars.staypluggedin.gg/',
         linkworks: true
     },
@@ -65,7 +65,7 @@ export const listOfProjects: Projects[] = [
         hosting: vercelSvg,
         project_Name: 'ChainL',
         project_summary: 'A website that plays a word travia game where users have to guess the word that is connected to the previous word',
-        role: 'Role: Junior Front-End Developer',
+        role: 'Junior Front-End Developer',
         webLink: '',
         linkworks: false
     }

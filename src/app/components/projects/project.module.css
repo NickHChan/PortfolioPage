@@ -11,7 +11,7 @@
     align-items: center;
     margin-top: -4rem;
 }
-/*Todo: set up media queries so that the container is centered with different monitor sizes */
+
 .projectInfoContainer{
     display: flex;
     gap: 1500px;

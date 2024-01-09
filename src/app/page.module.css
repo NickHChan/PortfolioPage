@@ -59,7 +59,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 
-.subTitle{
+.subTitle1{
+  color: #8aa4c2ff;
+  font-size: 3rem;
+  font-family: 'Raleway', Georgia, 'Times New Roman', Times, serif
+}
+.subTitle2{
   color: #dae6f5ff;
   font-size: 3rem;
   font-family: 'Raleway', Georgia, 'Times New Roman', Times, serif

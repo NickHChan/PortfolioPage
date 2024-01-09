@@ -18,7 +18,6 @@ export default function Projects() {
 
   return (
     <div ref={targetRef} className={styles.projectBody}>
-      <h4>A few projects I have worked on</h4>
       <div className={styles.stickyBody}>
         <motion.div style={{x, skew}} className={styles.projectInfoContainer}>
           {
@@ -28,7 +27,7 @@ export default function Projects() {
                   <ProjectBase 
                     src={project.src}
                     alt={project.alt}
-                    width={400}
+                    width={500}
                     height={500}
                     project_Name={project.project_Name}
                     project_summary={project.project_summary}

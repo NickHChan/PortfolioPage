@@ -48,8 +48,9 @@ export default function Home() {
       In Development
       <MainArticle/>
       <section ref={projectsRef}></section>
+        <h6 className={styles.subTitle1}>A Few Projects I Have Worked On</h6>
         <Projects/>
-       <h6 className={styles.subTitle} ref={achievementRef}>My Gaming Achievements</h6>
+       <h6 className={styles.subTitle2} ref={achievementRef}>My Gaming Achievements</h6>
       <Achievement/>
       <section ref={contactMeRef}></section>
       <ContactMe/>

@@ -7,7 +7,7 @@
     background-color: rgba(255, 255, 255, 0.3);
     border: 0.2rem solid rgba(66, 80, 94, 0.2);
     padding: 25px;
-    width: 1000px;
+    width: 1050px;
     height: 500px;
     margin-top: 5rem;
     border-radius: 2rem;
@@ -17,8 +17,9 @@
 
 .link,
 .linkDisabled{
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 
@@ -49,12 +50,37 @@
     justify-content: space-evenly;
     align-items: center;
 }
+.header{
+    font-weight: bold;
+    font-size: 2rem;
+}
 .tech{
     display: flex;
     gap: 0.4rem;
 }
 .tech p {
-    margin-top: 0.5%;
+    color: #577399ff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 0.4%;
+}
+.role{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.role p{
+    color: #577399ff;
+}
+
+.summary{
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    width: 400px;
 }
 
 
