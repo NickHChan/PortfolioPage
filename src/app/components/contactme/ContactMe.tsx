@@ -52,8 +52,8 @@ const copiedPopUp = {
             <Image 
               src={contactMePic}
               alt='A picture of Nick Chan'
-              height={250}
-              width={250}
+              height={300}
+              width={300}
               className={styles.image}
               />
             <aside className={styles.linkContainer}>
