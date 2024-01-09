@@ -68,3 +68,31 @@
   font-size: 3rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+@media (max-width: 1024px) {
+  .subTitle1,
+  .subTitle2{
+    font-size: 2rem;
+  }
+
+  .mainDay::before{
+    scale: -0.98;
+  }
+  .mainmidDay::before,
+  .mainNight::before{
+    scale: -0.5;
+    left: 1%;
+  }
+  .mainNight::before{
+    rotate: -30deg;
+  }
+
+}
+@media (max-width: 640px) {
+  .subTitle1,
+  .subTitle2{
+    font-size: 1rem;
+  }
+
+  
+}
