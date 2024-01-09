@@ -89,50 +89,23 @@
     border-radius: 0.5rem;
 }
 
-@media (max-width: 1280px) {
-    .contactMeBody{
-        padding: 0.5rem;
-    }
-}
-/* lg */
-@media (max-width: 1024px) {
-    .contactMeBody{
-        padding: 0;
-    }
-}
 
 /* md */
 @media (max-width: 768px) {
     .contactInfo{
-        width: 450px;
-        font-size: 14px;
-    }
-    .button{
-        font-size: 14px;
-    }
-}
-
-/* sm */
-@media (max-width: 640px) {
-    .contactMeBody{
-        border-radius: 2rem;
-    }
-    .contactInfo{
-        width: 350px;
-        font-size: 12px;
-    }
-    .button{
-        font-size: 12px;
-    }
-}
-
-/* xs */
-@media (max-width: 475px) {
-    .contactInfo{
         width: 300px;
-        font-size: 8px;
     }
-    .button{
-        font-size: 8px;
+    .title{
+        font-size: 1rem;
     }
+    .contactMeBody p,
+    .button,
+    .link{
+        font-size: 0.5rem;
+    }
+    .image{
+        height: 200px;
+        width: 200px;
+    }
+
 }
