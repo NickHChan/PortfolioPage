@@ -1,6 +1,7 @@
 import React from 'react';
 import Article from '../reuse/Article';
 import questionMark from '../../../images/question_marks.svg'
+import displayPic from '../../../images/DisplayPic.webp'
 import Image from 'next/image';
 import styles from './MainArticle.module.css'
 
@@ -8,10 +9,10 @@ export default function MainArticle() {
   return (
     <section className={styles.main}>
       <Image 
-      src={questionMark}
+      src={displayPic}
       alt='A picture of Nick Chan'
-      height={100}
-      width={100}
+      height={400}
+      width={400}
       />
         <p>Hello, I am Nick Chan, a dedicated web developer with a unique background in healthcare and management. 
       My journey into the world of technology is self-driven, marked by a passion for learning and mastering programming.

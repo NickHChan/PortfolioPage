@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
 root{
   --charcoal: #42505eff;
   --paynes-gray: #495867ff;
@@ -13,7 +13,7 @@ root{
   --link-hover: rgb(240, 233, 145)
 }
 body{
-  font-family: 'Raleway', Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   color: #42505eff;
   overflow-x: hidden;
 }

@@ -45,7 +45,6 @@ export default function Home() {
   return (
     <main className={isDay === 'day' ? styles.mainDay : (isDay === 'night' ? styles.mainNight : styles.mainmidDay)} style={{backgroundColor:`hsl(${hue},${saturation}%,${lightness}%)`}}>
       <section  ref={topPageRef}></section>
-      In Development
       <MainArticle/>
       <section ref={projectsRef}></section>
         <h6 className={styles.subTitle1}>A Few Projects I Have Worked On</h6>

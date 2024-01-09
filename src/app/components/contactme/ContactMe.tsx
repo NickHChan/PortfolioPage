@@ -2,7 +2,9 @@
 import React, {useState, useEffect} from 'react'
 import styles from './contactMe.module.css'
 import Link from 'next/link'
+import contactMePic from '../../../images/ContactMePic.webp'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function ContactMe() {
 const [copied, setCopied] = useState<boolean>(false);
@@ -47,8 +49,14 @@ const copiedPopUp = {
     <div className={styles.contactMeBody}>
         <h3 className={styles.title}>Contact Me</h3>
         <section className={styles.contactInfo}>
-            <div>Image Box</div>
-            <aside>
+            <Image 
+              src={contactMePic}
+              alt='A picture of Nick Chan'
+              height={250}
+              width={250}
+              className={styles.image}
+              />
+            <aside className={styles.linkContainer}>
                 <motion.div
                 initial='hidden'
                 animate={copied ? 'show' : 'hidden'}
