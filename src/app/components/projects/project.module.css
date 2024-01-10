@@ -34,14 +34,18 @@
 
 /* md */
 @media (max-width: 768px) {
+    .projectBody{
+        height: 150px;
+        margin-bottom: 80%;
+    }
+    .stickyBody{
+        flex-direction: column;
+        height: 800px;
+        width: 2500px;
+    }
     .projectInfoContainer{
-        left: 43%;
+        gap: 1rem;
+        left: 20%;
     }
 }
 
-/* sm */
-@media (max-width: 640px) {
-    .projectInfoContainer{
-        left: 44%;
-    }
-}

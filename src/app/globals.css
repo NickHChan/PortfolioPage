@@ -17,3 +17,10 @@ body{
   color: #42505eff;
   overflow-x: hidden;
 }
+
+@media (max-width: 768px){
+  html{
+    overflow-x: hidden;
+    margin: -1rem;
+  }
+}
