@@ -17,7 +17,13 @@ export default function Home() {
   const { topPageRef, projectsRef, achievementRef, contactMeRef} = useContext(ScrollContext)
 
   const handleOnScroll = () => {
-    let yPosition = Math.floor((window.scrollY/100)*1.3)
+    const winWidth = window.innerWidth;
+    let yPosition;
+    if(winWidth > 768){
+      yPosition = Math.floor((window.scrollY/100)*1.3)
+    } else{
+      yPosition = Math.floor((window.scrollY/100)*2.75)
+    }
     let yMax = Math.floor(window.screenY / 100)
     let newNum = ((yMax - yPosition) * 1.5) + 90;
     setLightness(newNum)

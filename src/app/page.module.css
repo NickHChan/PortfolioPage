@@ -88,11 +88,30 @@
   }
 
 }
+
+@media (max-width: 768px) {
+  .subTitle1,
+  .subTitle2{
+    font-size: 2rem;
+  }
+
+  .mainDay::before{
+    scale: -0.7;
+  }
+  .mainmidDay::before,
+  .mainNight::before{
+    scale: -0.3;
+    left: 0.3%;
+  }
+  .mainNight::before{
+    rotate: -15deg;
+  }
+
+}
 @media (max-width: 640px) {
   .subTitle1,
   .subTitle2{
     font-size: 1rem;
   }
-
   
 }
