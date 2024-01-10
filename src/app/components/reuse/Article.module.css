@@ -53,16 +53,9 @@
         width: 350px;
         flex-direction: column;
     }
-    .rank{
-        height: 150px;
-        width: 50px;
-        font-size: 10px;
-        justify-content: space-around;
-        gap:0;
-    }
     .image{
-        height: 50px;
-        width: 50px;
+        height: 100px;
+        width: 100px;
     }
 }
 

@@ -41,7 +41,7 @@
     .stickyBody{
         flex-direction: column;
         height: 800px;
-        width: 2500px;
+        width: 5000px;
     }
     .projectInfoContainer{
         gap: 1rem;
