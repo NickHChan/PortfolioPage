@@ -102,7 +102,7 @@
   .mainmidDay::before,
   .mainNight::before{
     scale: -0.3;
-    left: -8%;
+    left: -6%;
   }
   .mainNight::before{
     rotate: -15deg;
@@ -113,6 +113,11 @@
   .subTitle1,
   .subTitle2{
     font-size: 1rem;
+  }
+  .mainmidDay::before,
+  .mainNight::before{
+    scale: -0.3;
+    left: -8%;
   }
   
 }
