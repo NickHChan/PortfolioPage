@@ -4,6 +4,7 @@ import './globals.css'
 import NavBar from './components/navBar/NavBar'
 import {ScrollProvider} from './helper/scrollToContext'
 import Footer from './components/footer/Footer'
+import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,6 +27,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </ScrollProvider>
+        <Analytics />
         </body>
     </html>
   )
