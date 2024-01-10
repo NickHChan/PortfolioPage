@@ -41,13 +41,13 @@ export default function Project({src, alt, width, height, webLink, frameWork, la
           </header>
           <section className={styles.tech}>   
                 <p>Framework:</p>
-                <Image src={frameWork} alt='list of framework(s) used' height={25} width={25}/>
+                <Image src={frameWork} alt='list of framework(s) used' height={25} width={25} className={styles.techIcon}/>
                 <p>Language:</p>
-                <Image src={language} alt='list of coding language(s) used' height={25} width={25}/>
+                <Image src={language} alt='list of coding language(s) used' height={25} width={25} className={styles.techIcon}/>
                 <p>Styling:</p>
-                <Image src={styling} alt='the way the website was styled' height={25} width={25}/>
+                <Image src={styling} alt='the way the website was styled' height={25} width={25} className={styles.techIcon}/>
                 <p>Hosting:</p>
-                <Image src={hosting} alt='the platform the website was hosted on' height={25} width={25}/>
+                <Image src={hosting} alt='the platform the website was hosted on' height={25} width={25} className={styles.techIcon}/>
            </section>
            <section className={styles.role}>
             <p>Role:</p>

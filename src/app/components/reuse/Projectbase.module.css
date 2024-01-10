@@ -82,55 +82,113 @@
     width: 400px;
 }
 
+@media (max-width: 1280px) {
+    .projects{
+        width: 900px;
+        height: 450px;
+    }
+    .header{
+        font-size: 1.5rem;
+    }
+    .tech p,
+    .role,
+    .summary{
+        font-size: 1rem;
+    }
+    .techIcon{
+        height: 22px;
+        width: 22px;
+    }
+    .image{
+        height: 450px;
+        width: 350px;
+    }
+}
 
 /* lg */
 @media (max-width: 1024px) {
     .projects{
-        width: 350px;
+        width: 700px;
         height: 400px;
-        justify-content: space-around;
+
+    }
+    .header{
+        font-size: 1.25rem;
+    }
+    .tech p,
+    .role,
+    .summary{
+        font-size: 0.80rem;
+    }
+    .techIcon{
+        height: 20px;
+        width: 20px;
+    }
+    .link,
+    .linkDisabled{
+        gap: 1rem;
     }
     .image{
-        height: 300px;
-        width: 200px;
+        height: 400px;
+        width: 300px;
     }
 }
 
 /* md */
 @media (max-width: 768px) {
     .projects{
-        width: 300px;
+        width: 500px;
         height: 350px;
-        justify-content: space-around;
+
+    }
+    .projectInfo{
+        width: 250px;
+    }
+    .header{
+        font-size: 1rem;
+    }
+    .summary{
+        width: 200px;
+    }
+    .tech{
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .tech p{
+        margin: 0;
+    }
+    .tech p,
+    .role,
+    .summary{
+        font-size: 0.60rem;
+    }
+    .techIcon{
+        height: 15px;
+        width: 15px;
+    }
+    .link,
+    .linkDisabled{
+        gap: 1rem;
     }
     .image{
-        height: 250px;
-        width: 150px;
+        height: 350px;
+        width: 250px;
     }
 }
 
 /* sm */
 @media (max-width: 640px) {
     .projects{
-        width: 250px;
+        width: 350px;
         height: 300px;
-        justify-content: space-around;
-    }
-    .image{
-        height: 200px;
-        width: 100px;
-    }
-}
 
-/* xs */
-@media (max-width: 475px) {
-    .projects{
-        width: 200px;
-        height: 270px;
-        justify-content: space-around;
+    }
+    .summary{
+        width: 170px;
     }
     .image{
-        height: 150px;
-        width: 100px;
+        height: 300px;
+        width: 160px;
     }
 }
