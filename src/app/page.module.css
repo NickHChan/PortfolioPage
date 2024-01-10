@@ -97,11 +97,12 @@
 
   .mainDay::before{
     scale: -0.7;
+    left: -1%;
   }
   .mainmidDay::before,
   .mainNight::before{
     scale: -0.3;
-    left: 0.3%;
+    left: -6%;
   }
   .mainNight::before{
     rotate: -15deg;
