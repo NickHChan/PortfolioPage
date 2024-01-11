@@ -12,7 +12,7 @@ export default function Projects() {
     target: targetRef
   })
 
-  const x = useTransform(scrollYProgress,[0,1],['1%', '-110%'])
+  const x = useTransform(scrollYProgress,[0,1],['1%', '-120%'])
   const skewVelocity = useVelocity(scrollYProgress)
   const skew = useTransform(skewVelocity,[-1,-0.5,0,0.5,1],['18deg','10deg','0deg','-10deg','-18deg'],{ease: easeInOut})
 

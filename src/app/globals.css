@@ -13,7 +13,7 @@ root{
   --link-hover: rgb(240, 233, 145)
 }
 body{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'montserrat';
   color: #42505eff;
   overflow-x: hidden;
 }

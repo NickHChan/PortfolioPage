@@ -9,7 +9,7 @@
     margin: 4% auto;
     align-items: flex-end;
     top: 17%;
-    left: 0.9%;
+    left: 0.5rem;
     z-index: 100;
 }
 
@@ -22,7 +22,6 @@
     border-radius: 1rem;
     border: transparent;
     color: #f7f7ffff;
-    font-family: fantasy;
 }
 
 .hoverMenu:hover{
@@ -44,7 +43,6 @@
 }
 
 .button{
-    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color:transparent;
     color: rgb(54, 54, 54);
     border: none;
@@ -60,17 +58,14 @@
 
 /* xl */
 @media (max-width: 1280px) {
-    .footer{
-
-    }
-    .hoverMenu{
-        font-size: 1.5rem;
-    }
     .button{
         font-size: 20px;
     }
+    .footer{
+        left: 2%;
+    }
     .subMenuButtonContainer{
-        margin-right: -2.5rem;
+        margin-right: -2.3rem;
     }
     .subMenuBG{
         width: 170px;
@@ -87,7 +82,7 @@
         font-size: 15px;
     }
     .subMenuButtonContainer{
-        margin-right: -1rem;
+        margin-right: -1.4rem;
     }
     .subMenuBG{
         width: 150px;

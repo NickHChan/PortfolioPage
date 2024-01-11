@@ -5,8 +5,17 @@ import NavBar from './components/navBar/NavBar'
 import {ScrollProvider} from './helper/scrollToContext'
 import Footer from './components/footer/Footer'
 import { Analytics } from '@vercel/analytics/react'
+import { Montserrat } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400","600","800"],
+})
+const inter = Inter({
+  subsets: ["latin"]
+})
+
 
 export const metadata: Metadata = {
   title: `Nick's Website`,
@@ -21,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`montserrat.className, inter.className`}>
         <ScrollProvider>
           <NavBar />
           {children}

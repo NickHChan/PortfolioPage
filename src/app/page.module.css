@@ -65,24 +65,22 @@
 .subHeader{
   display: flex;
   justify-content: center;
-  font-family: fantasy;
   width: 350px;
   font-size: 1.5rem;
-  margin-bottom: 20%;
-}
-.arrowPic{
-  rotate: -90deg;
+  margin-top: 15%;
+  margin-bottom: 25%;
+  text-align: center;
 }
 .subTitle1{
   color: #8aa4c2ff;
   font-size: 3rem;
-  font-family:cursive;
+  font-weight: 800;
   margin-bottom: 5%;
 }
 .subTitle2{
   color: #dae6f5ff;
   font-size: 3rem;
-  font-family: cursive;
+  font-weight: 800;
 }
 
 @media (max-width: 1024px) {
@@ -97,7 +95,7 @@
   .mainmidDay::before,
   .mainNight::before{
     scale: -0.5;
-    left: 1%;
+    right: 1%;
   }
   .mainNight::before{
     rotate: -30deg;
@@ -113,12 +111,12 @@
 
   .mainDay::before{
     scale: -0.7;
-    left: -1%;
+    right: -1%;
   }
   .mainmidDay::before,
   .mainNight::before{
     scale: -0.3;
-    left: -6%;
+    right: -6%;
   }
   .mainNight::before{
     rotate: -15deg;
@@ -133,7 +131,7 @@
   .mainmidDay::before,
   .mainNight::before{
     scale: -0.3;
-    left: -8%;
+    right: -8%;
   }
   
 }

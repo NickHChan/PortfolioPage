@@ -2,10 +2,8 @@
 .title{
     margin-top: -2.5%;
     font-size: 1.75rem;
-    font-family: cursive;
 }
 .contactMeBody{
-    font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     width: 100%;
     height: 100%;
@@ -20,7 +18,8 @@
     margin-bottom: 5%;
 }
 .contactMeBody p{
-    font-size: 1.1rem;
+    font-family: 'inter';
+    font-size: 1.2rem;
     font-weight: bold;
     color: rgb(0, 0, 0);;
 }
@@ -39,11 +38,9 @@
 .link,
 .link:visited,
 .link:active{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
     text-decoration: none;
     color: #42505eff;
-    font-size: 14px;
+    font-size: 19px;
     margin-left: 3%;
 }
 
@@ -52,12 +49,11 @@
 }
 
 .button{
-    font-family: Georgia, 'Times New Roman', Times, serif;
     background: none;
     border: none;
-    font-weight: bold;
+    font-weight: 600;
     color: #42505eff;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .button:hover{

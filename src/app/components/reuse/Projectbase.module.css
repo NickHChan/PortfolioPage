@@ -11,7 +11,6 @@
     margin-top: 5rem;
     border-radius: 2rem;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .link,
@@ -51,9 +50,9 @@
     color: black;
 }
 .header{
-    font-weight: bold;
+    font-family: 'inter';
+    font-weight: 600;
     font-size: 2rem;
-    font-family:serif;
 }
 .tech{
     width: 300px;
@@ -69,7 +68,7 @@
     font-weight: bold;
     margin-top: 0.4%;
     margin-left: 0.95%;
-    font-family: fantasy;
+    font-family: 'inter';
 }
 .role{
     display: flex;
@@ -77,10 +76,9 @@
     gap: 1rem;
     font-size: 1.25rem;
     font-weight: bold;
-    font-family: cursive;
 }
 .role p{
-    font-family: fantasy;
+    font-family: 'inter';
 }
 
 .summary{
