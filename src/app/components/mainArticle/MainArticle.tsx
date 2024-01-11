@@ -7,13 +7,6 @@ import styles from './MainArticle.module.css'
 export default function MainArticle() {
   return (
     <section className={styles.main}>
-      <Image 
-      src={displayPic}
-      alt='A picture of Nick Chan'
-      height={500}
-      width={400}
-      className={styles.image}
-      />
         <p>Hello, I am Nick Chan, a dedicated web developer with a unique background in healthcare and management. 
       My journey into the world of technology is self-driven, marked by a passion for learning and mastering programming.
        I am an enthusiastic gamer and have a appreciation for Psytrance music. 

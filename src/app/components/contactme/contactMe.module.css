@@ -2,6 +2,7 @@
 .title{
     margin-top: -2.5%;
     font-size: 1.75rem;
+    font-family: cursive;
 }
 .contactMeBody{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -13,9 +14,10 @@
     justify-content: space-around;
     background-color: rgba(245, 245, 255,0.8);
     color: #42505eff;
-    padding: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1.3rem;
     scale: 1.3;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 .contactMeBody p{
     font-size: 1.1rem;
@@ -41,6 +43,8 @@
     font-weight: bold;
     text-decoration: none;
     color: #42505eff;
+    font-size: 14px;
+    margin-left: 3%;
 }
 
 .link:hover{
@@ -88,7 +92,7 @@
     z-index: -1;
 }
 .image{
-    border-radius: 0.5rem;
+    border-radius: 50%;
 }
 
 

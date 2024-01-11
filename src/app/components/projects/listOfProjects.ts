@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image"
 import questionMark from '../../../images/question_marks.svg'
-import allStarsImg from '../../../images/allstars.staypluggedin.ggV2.webp'
+import allStarsImg from '../../../images/allstars.staypluggedin.gg.webp'
 import chainLImage from '../../../images/ChainLPicture.webp'
 import cineTrainerImage from '../../../images/CineTrainerPic.webp'
 import nextJsSvg from '../../../images/svg/nextjs-icon-svgrepo-com.svg'

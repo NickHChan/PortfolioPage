@@ -2,7 +2,7 @@
 import React, {useState, useEffect} from 'react'
 import styles from './contactMe.module.css'
 import Link from 'next/link'
-import contactMePic from '../../../images/ContactMePic.webp'
+import contactMePic from '../../../images/ProfilePic.webp'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
@@ -69,7 +69,7 @@ const copiedPopUp = {
                   </div>
                 </motion.div>
                 <p>Email: <button className={styles.button}  value='Nickharuchan@gmail.com'onClick={handleOnClick}>Nickharuchan@gmail.com</button></p>
-                <p>Github: <Link href='https://github.com/NickHChan' rel='noopener noreferral' target='_blank' className={styles.link}>github.com/NickHChan</Link></p>
+                <p>Github: <Link href='https://github.com/NickHChan' rel='noopener noreferral' target='_blank' className={styles.link}>Github.com/NickHChan</Link></p>
             </aside>
         </section>
     </div>
