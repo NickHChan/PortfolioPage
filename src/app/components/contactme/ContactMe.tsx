@@ -47,7 +47,9 @@ const copiedPopUp = {
 
   return (
     <div className={styles.contactMeBody}>
-        <h3 className={styles.title}>Contact Me</h3>
+        <header className={styles.title}>
+          <h3>Contact Me</h3>
+        </header>
         <section className={styles.contactInfo}>
             <Image 
               src={contactMePic}

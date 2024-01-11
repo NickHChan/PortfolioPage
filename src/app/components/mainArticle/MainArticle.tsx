@@ -10,7 +10,7 @@ export default function MainArticle() {
       <Image 
       src={displayPic}
       alt='A picture of Nick Chan'
-      height={400}
+      height={500}
       width={400}
       className={styles.image}
       />

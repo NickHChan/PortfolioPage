@@ -17,7 +17,7 @@ const toggleHoverMenuOff = () => {
 const subMenuAnimationBase = {
     show: {
         opacity: 1,
-        transform: "translateY(110px)",
+        transform: "translateY(-85px)",
         transition:{
             duration: 1
         },
@@ -25,7 +25,7 @@ const subMenuAnimationBase = {
     },
     close:{
         opacity: 0,
-        transform: "translateY(-110px)",
+        transform: "translateY(85px)",
         transition:{
             duration: 1
         },
