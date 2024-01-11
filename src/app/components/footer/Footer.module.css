@@ -46,7 +46,7 @@
 .button{
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color:transparent;
-    color: #fe5f55ff;
+    color: rgb(54, 54, 54);
     border: none;
     height: 20px;
     font-size: 30px;
@@ -55,7 +55,7 @@
 .button:hover{
     cursor: pointer;
     scale: 1.19;
-    color: #8aa4c2ff;
+    color: #fe5f55ff;
 }
 
 /* xl */

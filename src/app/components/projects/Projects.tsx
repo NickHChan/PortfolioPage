@@ -12,7 +12,7 @@ export default function Projects() {
     target: targetRef
   })
 
-  const x = useTransform(scrollYProgress,[0,1],['1%', '-118%'])
+  const x = useTransform(scrollYProgress,[0,1],['1%', '-110%'])
   const skewVelocity = useVelocity(scrollYProgress)
   const skew = useTransform(skewVelocity,[-1,-0.5,0,0.5,1],['18deg','10deg','0deg','-10deg','-18deg'],{ease: easeInOut})
 
@@ -23,7 +23,7 @@ export default function Projects() {
           {
             listOfProjects.map((project, i) => {
               return(
-                <div key={i}>
+                <div key={i} >
                   <ProjectBase 
                     src={project.src}
                     alt={project.alt}
