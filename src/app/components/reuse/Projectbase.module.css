@@ -97,6 +97,9 @@
     .header{
         font-size: 1.5rem;
     }
+    .tech{
+        width: 200px;
+    }
     .tech p,
     .role,
     .summary{
@@ -108,7 +111,7 @@
     }
     .image{
         height: 450px;
-        width: 350px;
+        width: 400px;
     }
 }
 
@@ -137,7 +140,7 @@
     }
     .image{
         height: 400px;
-        width: 300px;
+        width: 320px;
     }
 }
 

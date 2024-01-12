@@ -1,17 +1,39 @@
-/* 2xl */
-@media (max-width: 1536px) {}
+@media(max-width:3440px){
 
-/* xl */
-@media (max-width: 1280px) {}
+}
+@media(max-width:2560px){
 
-/* lg */
-@media (max-width: 1024px) {}
+}
+@media(max-width:1920px){
 
-/* md */
-@media (max-width: 768px) {}
+}
+@media(max-width:1680px){
 
-/* sm */
-@media (max-width: 640px) {}
+}
+@media(max-width:1440px){
+ 
+}
+@media(max-width:1366px){
 
-/* xs */
-@media (max-width: 475px) {}
+}
+@media(max-width:1280px){
+
+}
+@media (max-width: 1024px){
+
+} 
+@media (max-width: 768px) {
+}
+
+@media(max-width: 600px){
+
+}
+@media (max-height: 896px){
+
+}
+@media (max-height: 568px) {
+
+}
+@media (max-height:360px){
+ 
+}

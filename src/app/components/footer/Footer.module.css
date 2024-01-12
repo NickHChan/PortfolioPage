@@ -37,7 +37,6 @@
     margin-right: -4rem;
 }
 .subMenuBG{
-    background-color: aqua;
     position: absolute;
     display: flex;
     height: 200px;
@@ -65,9 +64,15 @@
         left: 13.3rem;
     }
 }
+@media(max-width:2560px){
+    .footer{
+        left: 8rem;
+    }
+}
+
 @media(max-width:1920px){
     .footer{
-        left: 4rem;
+        left: 3.6rem;
     }
 }
 @media(max-width:1680px){
@@ -140,5 +145,27 @@
     .hoverMenu{
         top: 3rem;
         left: 0.4rem;
+    }
+}
+@media (max-height: 568px) {
+    .footer{
+        top: 9rem;
+        left: 3.9rem;
+    }
+    .button{
+        font-size: 10px;
+    }
+    .hoverMenu{
+        top: 3rem;
+        left: 0.4rem;
+    }
+}
+
+@media (max-height:360px){
+    .footer{
+        left: 2.8rem;
+    }
+    .subMenuBG{
+        margin-top: 1rem;
     }
 }

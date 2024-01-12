@@ -21,16 +21,31 @@
 
 }
 
-
+@media(max-width:3440px){
+    .stickyBody{
+        height: 1500px;
+    }
+    .projectInfoContainer{
+        left:40.5%
+     }
+    .projectInfoContainer{
+        gap: 1500px;
+    }
+}
+@media(max-width:1440px){
+ .projectInfoContainer{
+    left:36.5%
+ }
+}
 @media (max-width: 1280px){
     .projectInfoContainer{
-        left: 40.6%;
+        left: 36.6%;
     }
 }
 /* lg */
 @media (max-width: 1024px) {
     .projectInfoContainer{
-        left: 42%
+        left: 37.5%
     }
 }
 
