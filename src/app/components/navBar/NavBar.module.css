@@ -12,6 +12,7 @@
 }
 
 .button{
+    position: absolute;
     font-size: 3rem;
     background-color: #495867ff;
     padding: 0 1rem;
@@ -43,5 +44,10 @@
     .navBody{
         left: -2rem;
         top: 1rem;
+    }
+}
+@media(max-width: 600px){
+    .navBody{
+        left: -0.5rem
     }
 }

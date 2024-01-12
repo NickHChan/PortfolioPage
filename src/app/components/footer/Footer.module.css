@@ -9,11 +9,12 @@
     margin: 4% auto;
     align-items: flex-end;
     top: 17%;
-    left: 0.5rem;
     z-index: 100;
+    left: 7.5rem;
 }
 
 .hoverMenu{
+    position: absolute;
     display: flex;
     justify-content: center;
     font-size: 2rem;
@@ -22,6 +23,7 @@
     border-radius: 1rem;
     border: transparent;
     color: #f7f7ffff;
+    top: 6rem;
 }
 
 .hoverMenu:hover{
@@ -35,6 +37,7 @@
     margin-right: -4rem;
 }
 .subMenuBG{
+    background-color: aqua;
     position: absolute;
     display: flex;
     height: 200px;
@@ -56,54 +59,86 @@
     color: #fe5f55ff;
 }
 
-/* xl */
-@media (max-width: 1280px) {
-    .button{
-        font-size: 20px;
-    }
+
+@media(max-width:3440px){
     .footer{
-        left: 2%;
-    }
-    .subMenuButtonContainer{
-        margin-right: -2.3rem;
-    }
-    .subMenuBG{
-        width: 170px;
-        height: 170px;
-        margin-bottom: 2rem;
+        left: 13.3rem;
     }
 }
-
-@media (max-width: 1090px){
+@media(max-width:1920px){
     .footer{
-
+        left: 4rem;
+    }
+}
+@media(max-width:1680px){
+    .footer{
+        left: 2.1rem;
+    }
+}
+@media(max-width:1440px){
+    .footer{
+        left: 0.8rem;
+    }
+}
+@media(max-width:1366px){
+    .footer{
+        left: 1.2rem;
     }
     .button{
-        font-size: 15px;
+        font-size: 25px;
     }
-    .subMenuButtonContainer{
-        margin-right: -1.4rem;
+    .hoverMenu{
+        left: 3rem;
     }
     .subMenuBG{
-        width: 150px;
-        height: 150px;
+        width: 180px;
     }
-    .button:hover{
-        scale: 1.2;
+
+}
+@media(max-width:1280px){
+    .footer{
+        left: 0.6rem;
     }
+
+}
+@media (max-width: 1024px){
+    .footer{
+        left: 2rem;
+    }
+    .subMenuBG{
+        margin-top: 0.3rem;
+    }
+
 } 
 
 @media (max-width: 768px) {
     .footer{
-
+        left: 1rem;
     }
     .button{
-        font-size: 13px;
+        font-size: 20px;
     }
-    .subMenuButtonContainer{
-        margin-right: -0.4rem;
+    .hoverMenu{
+        left: 2rem;
+        top: 4.5rem;
     }
     .button:hover{
         scale: 1.1;
+    }
+    .subMenuBG{
+        width: 160px;
+    }
+}
+
+@media(max-width: 600px){
+    .footer{
+        left: 2rem;
+    }
+    .button{
+        font-size: 10px;
+    }
+    .hoverMenu{
+        top: 3rem;
+        left: 0.4rem;
     }
 }

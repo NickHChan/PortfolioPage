@@ -2,7 +2,7 @@
 import React, {useState, useEffect} from 'react'
 import styles from './contactMe.module.css'
 import Link from 'next/link'
-import contactMePic from '../../../images/ProfilePic.webp'
+import contactMePic from '../../../images/profilePic.svg'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
