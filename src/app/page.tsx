@@ -31,7 +31,6 @@ export default function Home() {
     let yMax = Math.floor(window.screenY / 100)
     let imageFadeNumber = (((yMax+100) - (yPosition * 18)))
     let newNum = ((yMax - yPosition) * 1.5) + 90;
-    console.log(imageFadeNumber)
     setImageFade(imageFadeNumber)
     setLightness(newNum)
 

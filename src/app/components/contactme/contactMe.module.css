@@ -95,6 +95,53 @@
 }
 
 
+@media(max-width:3440px){
+.popupBG{
+    left: 58.3%;
+    top: 36%;
+}
+}
+@media(max-width:2560px){
+    .popupBG{
+        left: 61%;
+    }
+}
+@media(max-width:1920px){
+    .popupBG{
+        left: 65%;
+    }
+}
+@media(max-width:1680px){
+    .popupBG{
+        left: 68%;
+    }
+}
+@media(max-width:1536px){
+    .popupBG{
+        left: 69%;
+    }
+}
+@media(max-width:1440px){
+    .popupBG{
+        left: 71%;
+    }
+}
+@media(max-width:1366px){
+    .popupBG{
+        left: 72.5%;
+    }
+}
+@media(max-width:1280px){
+    .popupBG{
+        left: 74%;
+    }
+}
+@media (max-width: 1024px){
+    .popupBG{
+        left: 81%;
+    }
+} 
+
 /* md */
 @media (max-width: 768px) {
     .contactInfo{
