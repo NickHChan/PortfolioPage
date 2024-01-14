@@ -7,10 +7,9 @@ import { Analytics } from '@vercel/analytics/react'
 import { Montserrat} from 'next/font/google'
 
 
-export const montserrat = Montserrat({
+ const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["400","600","800"],
-  display: 'swap',
 })
 
 
