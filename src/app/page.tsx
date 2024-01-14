@@ -57,7 +57,7 @@ export default function Home() {
 
   return (
     <main className={isDay === 'day' ? styles.mainDay : (isDay === 'night' ? styles.mainNight : styles.mainmidDay)} style={{backgroundColor:`hsl(${hue},${saturation}%,${lightness}%)`}}>
-      <header className={styles.header}>
+      <header className={styles.header}  ref={topPageRef}>
           <Image
           src={headerPic}
           alt='Picture of my name Nick Chan'
@@ -76,7 +76,6 @@ export default function Home() {
           <p>Scroll down to know more about me!</p>
         </section>
       </header>
-      <section  ref={topPageRef}></section>
       <MainArticle/>
       <section ref={projectsRef}></section>
       <h6 className={styles.subTitle1}>A Few Projects I Have Worked On</h6>

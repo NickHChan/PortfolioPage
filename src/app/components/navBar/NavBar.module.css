@@ -9,14 +9,15 @@
     margin: 4% auto;
     left: -10%;
     z-index: 100;
+    font-family: 'montserrat';
 }
 
 .button{
     position: absolute;
     font-size: 3rem;
-    background-color: #495867ff;
+    background-color: rgb(45, 55, 63);
     padding: 0 1rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     border: transparent;
     color: #f7f7ffff;
 }

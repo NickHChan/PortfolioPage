@@ -32,6 +32,16 @@
         gap: 1500px;
     }
 }
+@media(max-width:1920px){
+    .stickyBody{
+        height: 970px;
+    }
+}
+@media(max-width:1536px){
+    .stickyBody{
+        height: 890px;
+    }
+}
 @media(max-width:1440px){
  .projectInfoContainer{
     left:36.5%

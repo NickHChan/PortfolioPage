@@ -19,7 +19,7 @@
     justify-content: center;
     font-size: 2rem;
     padding: 0.5rem 1rem;
-    background-color: #495867ff;
+    background-color: rgb(45, 55, 63);
     border-radius: 1rem;
     border: transparent;
     color: #f7f7ffff;
@@ -80,11 +80,17 @@
         left: 2.1rem;
     }
 }
+@media(max-width:1536px){
+    .footer{
+        left: 1.6rem;
+    }
+}
 @media(max-width:1440px){
     .footer{
         left: 0.8rem;
     }
 }
+
 @media(max-width:1366px){
     .footer{
         left: 1.2rem;
@@ -146,6 +152,7 @@
         top: 3rem;
         left: 0.4rem;
     }
+
 }
 @media (max-height: 568px) {
     .footer{

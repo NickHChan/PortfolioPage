@@ -68,15 +68,14 @@
   justify-content: center;
   width: 350px;
   font-size: 1.5rem;
-  margin-top: 8%;
+  margin-top: -25%;
   margin-bottom: 50%;
   text-align: center;
 }
 .subTitle1{
-  color: #8aa4c2ff;
+  color: rgb(78, 85, 93);
   font-size: 3rem;
   font-weight: 800;
-  margin-bottom: 5%;
 }
 .subTitle2{
   color: #dae6f5ff;
@@ -92,6 +91,14 @@
   .subTitle1{
     margin-bottom: -7%;
   }
+}
+@media (max-width: 1536px){
+  .header{
+    margin: 0;
+  }
+}
+.subTitle1{
+  margin-bottom: 7%;
 }
 @media (max-width: 1024px) {
   .subTitle1,

@@ -47,9 +47,6 @@ const copiedPopUp = {
 
   return (
     <div className={styles.contactMeBody}>
-        <header className={styles.title}>
-          <h3>Contact Me</h3>
-        </header>
         <section className={styles.contactInfo}>
             <Image 
               src={contactMePic}
@@ -68,6 +65,7 @@ const copiedPopUp = {
                     <p>Copied!</p>
                   </div>
                 </motion.div>
+                <h3 className={styles.title}>Contact Me</h3>
                 <p>Email: <button className={styles.button}  value='Nickharuchan@gmail.com'onClick={handleOnClick}>Nickharuchan@gmail.com</button></p>
                 <p>Github: <Link href='https://github.com/NickHChan' rel='noopener noreferral' target='_blank' className={styles.link}>Github.com/NickHChan</Link></p>
             </aside>
