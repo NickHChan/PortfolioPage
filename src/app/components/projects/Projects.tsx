@@ -38,6 +38,7 @@ export default function Projects() {
                     role={project.role}
                     webLink={project.webLink}
                     linkworks={project.linkworks}
+                    i={i}
                   />
                 </div>
               )

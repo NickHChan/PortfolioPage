@@ -19,10 +19,11 @@ type Props = {
     project_summary: string;
     role: string;
     linkworks: boolean;
+    i:number;
 }
 
 
-export default function Project({src, alt, width, height, webLink, frameWork, language, styling, hosting, project_Name,role, linkworks, project_summary}:Props) {
+export default function Project({src, alt, width, height, webLink, frameWork, language, styling, hosting, project_Name,role, linkworks, project_summary,i}:Props) {
 
   return (
     <section className={styles.projects}>
@@ -39,7 +40,7 @@ export default function Project({src, alt, width, height, webLink, frameWork, la
           <header className={styles.header}>
             {project_Name}
           </header>
-          <section className={styles.tech}>   
+          <section className={styles[`tech${i}`]}>   
                 <p>Framework:</p>
                 <Image src={frameWork} alt='list of framework(s) used' height={25} width={25} className={styles.techIcon}/>
                 <p>Language:</p>

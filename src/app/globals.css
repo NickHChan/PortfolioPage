@@ -13,7 +13,7 @@ root{
   --link-hover: rgb(240, 233, 145)
 }
 body{
-  font-family: 'montserrat';
+  font-family: var(--font-montserrat);
   color: #42505eff;
   overflow-x: hidden;
 }
