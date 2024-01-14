@@ -65,13 +65,19 @@
     text-align: left;
     gap: 0.2rem;
 }
-.tech0 p,
+.tech0 p{
+    font-size: 1.15rem;
+    margin-top: 0.4%;
+    margin-left: 0.95%;
+    letter-spacing: 2px;
+    color: rgb(255, 248, 199);
+}
 .tech1 p {
     font-size: 1.15rem;
     margin-top: 0.4%;
     margin-left: 0.95%;
     letter-spacing: 2px;
-    color: rgb(61, 118, 159);
+    color: rgb(129, 231, 222);
 }
 .tech2 p {
     font-size: 1.15rem;

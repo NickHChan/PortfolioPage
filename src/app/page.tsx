@@ -14,7 +14,8 @@ import headerPic from '../images/svg/headerPic.svg'
 
 export default function Home() {
   const [hue, setHue] = useState<number>(44);
-  const [imageFade, setImageFade] = useState<number>(100)
+  const [imageFadeOut, setImageFadeOut] = useState<number>(100)
+  const [imageFadeIn, setImageFadeIn] = useState<number>(0)
   const [saturation, setSaturation] = useState<number>(100);
   const [lightness, setLightness] = useState<number>(90);
   const [isDay, setIsDay] = useState<'day' | 'midDay' | 'night'>('day');
@@ -29,9 +30,11 @@ export default function Home() {
       yPosition = Math.floor((window.scrollY/100)*2.75)
     }
     let yMax = Math.floor(window.screenY / 100)
-    let imageFadeNumber = (((yMax+100) - (yPosition * 18)))
+    let imageFadeOutNumber = (((yMax+100) - (yPosition * 18)))
+    let imageFadeInNumber = ((yPosition * 18) -(yMax+100) - 80)
     let newNum = ((yMax - yPosition) * 1.5) + 90;
-    setImageFade(imageFadeNumber)
+    setImageFadeOut(imageFadeOutNumber)
+    setImageFadeIn(imageFadeInNumber)
     setLightness(newNum)
 
   }
@@ -64,7 +67,7 @@ export default function Home() {
           width={500}
           className={styles.headerPic}
           />
-        <section className={styles.subHeader} style={{opacity:`${imageFade}%`, transform:`translate(0 ${imageFade})`}}>
+        <section className={styles.subHeader} style={{opacity:`${imageFadeOut}%`, transform:`translate(0 ${imageFadeOut})`}}>
           <Image
           src={arrowPic}
           alt='Picture of an arrow pointing down'
@@ -75,6 +78,7 @@ export default function Home() {
           <p>Scroll down to know more about me!</p>
         </section>
       </header>
+      <article className={styles.name} style={{opacity:`${imageFadeIn}`}}>Nick Chan</article>
       <MainArticle/>
       <section ref={projectsRef}></section>
       <h6 className={styles.subTitle1}>A Few Projects I Have Worked On</h6>

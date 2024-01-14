@@ -68,9 +68,18 @@
   justify-content: center;
   width: 350px;
   font-size: 1.5rem;
+  margin-left: 5px;
   margin-top: -25%;
   margin-bottom: 50%;
   text-align: center;
+}
+.name{
+  font-size: 4rem;
+  font-weight: 800;
+  color: rgb(5, 4, 4);
+}
+.subHeader p {
+  margin-left: -40px;
 }
 .subTitle1{
   color: rgb(78, 85, 93);
