@@ -74,16 +74,18 @@
   text-align: center;
 }
 .name{
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 800;
-  color: rgb(5, 4, 4);
+  color: rgb(78, 85, 93);
 }
 .subHeader p {
   margin-left: -40px;
 }
 .subTitle1{
   color: rgb(78, 85, 93);
+  font-weight: 800;
   font-size: 3rem;
+  margin-bottom: -10%;
 
 }
 .subTitle2{

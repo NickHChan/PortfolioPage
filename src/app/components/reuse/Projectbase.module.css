@@ -52,7 +52,7 @@
 .header{
     font-family: sans-serif;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 .tech0,
 .tech1,
@@ -66,21 +66,21 @@
     gap: 0.2rem;
 }
 .tech0 p{
-    font-size: 1.15rem;
+    font-size: 0.95rem;
     margin-top: 0.4%;
     margin-left: 0.95%;
     letter-spacing: 2px;
     color: rgb(255, 248, 199);
 }
 .tech1 p {
-    font-size: 1.15rem;
+    font-size: 0.95rem;
     margin-top: 0.4%;
     margin-left: 0.95%;
     letter-spacing: 2px;
-    color: rgb(129, 231, 222);
+    color: rgb(255, 255, 255);
 }
 .tech2 p {
-    font-size: 1.15rem;
+    font-size: 0.95rem;
     margin-top: 0.4%;
     margin-left: 0.95%;
     letter-spacing: 2px;
@@ -91,7 +91,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 .role p{
@@ -100,10 +100,10 @@
 
 .summary{
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     line-height: 1.5rem;
     font-weight: bold;
-    width: 400px;
+    width: 375px;
 }
 
 @media (max-width: 1280px) {
@@ -112,7 +112,7 @@
         height: 450px;
     }
     .header{
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     .tech{
         width: 200px;
@@ -120,7 +120,7 @@
     .tech p,
     .role,
     .summary{
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
     .techIcon{
         height: 22px;
@@ -140,12 +140,12 @@
 
     }
     .header{
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
     .tech p,
     .role,
     .summary{
-        font-size: 0.80rem;
+        font-size: 0.55rem;
     }
     .techIcon{
         height: 20px;
@@ -172,7 +172,7 @@
         width: 250px;
     }
     .header{
-        font-size: 0.8rem;
+        font-size: 0.55rem;
     }
     .summary{
         width: 200px;
@@ -188,7 +188,7 @@
     .tech p,
     .role,
     .summary{
-        font-size: 0.60rem;
+        font-size: 0.35rem;
     }
     .techIcon{
         height: 15px;
