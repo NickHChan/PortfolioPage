@@ -1,18 +1,21 @@
 
 .projects{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.3);
     border: 0.2rem solid rgba(66, 80, 94, 0.2);
     padding: 25px;
-    width: 900px;
-    height: 500px;
+    width: 1000px;
+    height: 550px;
     margin-top: 5rem;
     border-radius: 2rem;
     text-align: center;
 }
-
+.projectInfoContainer{
+    display: flex;
+}
 .link,
 .linkDisabled{
     width: 100%;
@@ -59,7 +62,7 @@
 .tech2{
     width: 300px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 0.5fr;
     grid-template-rows: repeat(4 1fr);
     justify-items: center;
     text-align: left;
@@ -86,6 +89,25 @@
     letter-spacing: 2px;
     color: rgb(179, 179, 245);
 }
+.NextJS,
+.Vercel{
+    -webkit-text-stroke: 0.3px black;
+    color: black !important;
+}
+.Typescript,
+.Css{
+    -webkit-text-stroke: 0.3px black;
+    color: rgb(59, 144, 255) !important;
+}
+.Sass{
+    -webkit-text-stroke: 0.3px black;
+    color: rgb(224, 55, 207)!important;
+}
+.Javascript{
+    -webkit-text-stroke: 0.2px black;
+    color: rgb(251, 255, 0)!important;
+}
+
 
 .role{
     display: flex;

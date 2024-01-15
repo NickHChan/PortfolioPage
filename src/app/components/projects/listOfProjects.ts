@@ -20,6 +20,10 @@ type Projects = {
     language: StaticImageData;
     styling: StaticImageData;
     hosting: StaticImageData;
+    frameWorkName: string;
+    languageName: string;
+    stylingName: string;
+    hostingName: string;
     project_Name: string;
     project_summary: string;
     role: string;
@@ -35,6 +39,10 @@ export const listOfProjects: Projects[] = [
         language: typeScriptSvg,
         styling: sassSvg,
         hosting: vercelSvg,
+        frameWorkName: 'NextJS',
+        languageName: 'Typescript',
+        stylingName: 'Sass',
+        hostingName: 'Vercel',
         project_Name: 'CineTrainer',
         project_summary: `A website used to display a list of movie actors in a movie to help users train for Cine2Nerdle's new battle mode`,
         role: 'Solo-Developer Work',
@@ -49,6 +57,10 @@ export const listOfProjects: Projects[] = [
         language: javaScriptSvg,
         styling: cssSvg,
         hosting: vercelSvg,
+        frameWorkName: 'NextJS',
+        languageName: 'Javascript',
+        stylingName: 'Css',
+        hostingName: 'Vercel',
         project_Name: 'Allstars.staypluggedin.gg',
         project_summary: 'A website about a coca-cola sponsored e-sports event that includes games being played, dates, and co-streamers',
         role: 'Volunteer Developer',
@@ -63,6 +75,10 @@ export const listOfProjects: Projects[] = [
         language: typeScriptSvg,
         styling: sassSvg,
         hosting: vercelSvg,
+        frameWorkName: 'NextJS',
+        languageName: 'Typescript',
+        stylingName: 'Sass',
+        hostingName: 'Vercel',
         project_Name: 'ChainL',
         project_summary: 'A website that plays a word travia game where users have to guess the word that is connected to the previous word',
         role: 'Junior Front-End Developer',

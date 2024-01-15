@@ -31,12 +31,11 @@ export default function Home() {
     }
     let yMax = Math.floor(window.screenY / 100)
     let imageFadeOutNumber = (((yMax+100) - (yPosition * 18)))
-    let imageFadeInNumber = ((yPosition * 18) -(yMax+100) - 80)
+    let imageFadeInNumber = (((yPosition * 30) -(yMax+100))/100)
     let newNum = ((yMax - yPosition) * 1.5) + 90;
     setImageFadeOut(imageFadeOutNumber)
     setImageFadeIn(imageFadeInNumber)
     setLightness(newNum)
-
   }
 
   useEffect(()=>{
@@ -78,7 +77,7 @@ export default function Home() {
           <p>Scroll down to know more about me!</p>
         </section>
       </header>
-      <article className={styles.name} style={{opacity:`${imageFadeIn}`}}>Nick Chan</article>
+      <article className={styles.name} style={{opacity:`${imageFadeIn}`}}>About Daytime Nick</article>
       <MainArticle/>
       <section ref={projectsRef}></section>
       <h6 className={styles.subTitle1}>A Few Projects I Have Worked On</h6>

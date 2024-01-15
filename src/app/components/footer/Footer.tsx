@@ -128,7 +128,7 @@ const subMenuAnimation3 = {
                         onHoverStart={toggleHoverMenuOn}
                         onHoverEnd={toggleHoverMenuOff}
                         >
-                        <button className={styles.button} onClick={scrollToAchievements}>Achievments</button>
+                        <button className={styles.button} onClick={scrollToAchievements}>Achievements</button>
                     </motion.div>
                     <motion.div
                         initial = 'close'

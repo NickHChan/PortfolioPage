@@ -15,6 +15,10 @@ type Props = {
     language: StaticImageData;
     styling: StaticImageData;
     hosting: StaticImageData;
+    frameWorkName: string;
+    languageName: string;
+    stylingName: string;
+    hostingName: string;
     project_Name: string;
     project_summary: string;
     role: string;
@@ -23,10 +27,14 @@ type Props = {
 }
 
 
-export default function Project({src, alt, width, height, webLink, frameWork, language, styling, hosting, project_Name,role, linkworks, project_summary,i}:Props) {
+export default function Project({src, alt, width, height, webLink, frameWork, language, styling, hosting, project_Name,role, linkworks, project_summary,i, frameWorkName, languageName, stylingName, hostingName}:Props) {
 
   return (
     <section className={styles.projects}>
+    <header className={styles.header}>
+      {project_Name}
+    </header>
+    <section className={styles.projectInfoContainer}>
       <Link href={webLink} rel='noopener noreferrer' target='_blank' className={ linkworks ? styles.link : styles.linkDisabled} aria-disabled={linkworks} tabIndex={linkworks ? undefined : -1}>
         <Image
             src={src}
@@ -36,19 +44,21 @@ export default function Project({src, alt, width, height, webLink, frameWork, la
             quality={100}
             className={styles.image}
         />
-        <section className={styles.projectInfo}>
-          <header className={styles.header}>
-            {project_Name}
-          </header>
-          <section className={styles[`tech${i}`]}>   
+      </Link>
+      <article className={styles.projectInfo}>
+        <section className={styles[`tech${i}`]}>   
                 <p>Framework:</p>
                 <Image src={frameWork} alt='list of framework(s) used' height={25} width={25} className={styles.techIcon}/>
+                <p className={styles[`${frameWorkName}`]}>{frameWorkName}</p>
                 <p>Language:</p>
                 <Image src={language} alt='list of coding language(s) used' height={25} width={25} className={styles.techIcon}/>
+                <p className={styles[`${languageName}`]}>{languageName}</p>
                 <p>Styling:</p>
                 <Image src={styling} alt='the way the website was styled' height={25} width={25} className={styles.techIcon}/>
+                <p className={styles[`${stylingName}`]}>{stylingName}</p>
                 <p>Hosting:</p>
                 <Image src={hosting} alt='the platform the website was hosted on' height={25} width={25} className={styles.techIcon}/>
+                <p className={styles[`${hostingName}`]}>{hostingName}</p>
            </section>
            <section className={styles.role}>
             <p>Role:</p>
@@ -57,8 +67,8 @@ export default function Project({src, alt, width, height, webLink, frameWork, la
            <summary className={styles.summary}>
             {project_summary}
            </summary>
-        </section>    
-      </Link>
+      </article>
+    </section>    
     </section>
   )
 }

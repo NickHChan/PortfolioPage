@@ -14,7 +14,7 @@ export default function Projects() {
 
   const x = useTransform(scrollYProgress,[0,1],['1%', '-120%'])
   const skewVelocity = useVelocity(scrollYProgress)
-  const skew = useTransform(skewVelocity,[-1,-0.5,0,0.5,1],['18deg','10deg','0deg','-10deg','-18deg'],{ease: easeInOut})
+  const skew = useTransform(skewVelocity,[-1,-0.5,0,0.5,1],['10deg','5deg','0deg','-5deg','-10deg'],{ease: easeInOut})
 
   return (
     <div ref={targetRef} className={styles.projectBody}>
@@ -35,6 +35,10 @@ export default function Projects() {
                     language={project.language}
                     styling={project.styling}
                     hosting={project.hosting}
+                    frameWorkName={project.frameWorkName}
+                    languageName={project.languageName}
+                    stylingName={project.stylingName}
+                    hostingName={project.hostingName}
                     role={project.role}
                     webLink={project.webLink}
                     linkworks={project.linkworks}

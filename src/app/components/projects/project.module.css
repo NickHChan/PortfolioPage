@@ -16,21 +16,18 @@
     display: flex;
     gap: 500px;
     position: relative;
-    left: 37%;
+    left: 36.5%;
     margin-bottom: 4.5%;
 
 }
 
-@media(max-width:3440px){
+@media(min-width:3440px){
     .stickyBody{
         height: 1500px;
     }
     .projectInfoContainer{
         left:40.5%
      }
-    .projectInfoContainer{
-        gap: 1500px;
-    }
 }
 @media(max-width:1920px){
     .stickyBody{
@@ -39,7 +36,7 @@
 }
 @media(max-width:1536px){
     .stickyBody{
-        height: 890px;
+        height: 810px;
     }
 }
 @media(max-width:1440px){
