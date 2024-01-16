@@ -27,4 +27,4 @@ export const ScrollProvider = ({ children }) => {
             {children}
         </ScrollContext.Provider>
     );
-};
+}; 

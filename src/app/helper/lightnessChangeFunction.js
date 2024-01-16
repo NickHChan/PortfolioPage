@@ -1,5 +1,11 @@
-export const onLightnessChange = (lightness, setHue, setSaturation, setIsDay) => {
+export const onLightnessChange = (lightness, setHue, setSaturation, setTheme) => {
 
+  if (lightness > 88) {
+    setTheme('default')
+  }
+  if (lightness < 88) {
+    setTheme('day')
+  }
   if (lightness <= 85) {
     setHue(44)
   }
@@ -31,16 +37,16 @@ export const onLightnessChange = (lightness, setHue, setSaturation, setIsDay) =>
   if (lightness <= 40) {
     setHue(26)
     setSaturation(80)
-    setIsDay('day')
+    setTheme('day')
   }
   if (lightness <= 35) {
     setHue(236)
     setSaturation(50)
-    setIsDay('midDay')
+    setTheme('midDay')
   }
   if (lightness <= 30) {
     setHue(240)
-    setIsDay('night')
+    setTheme('night')
     setSaturation(40)
   }
   if (lightness <= 25) {

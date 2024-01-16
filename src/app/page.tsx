@@ -1,5 +1,5 @@
 'use client'
-import React, {useContext, useEffect, useState, useRef} from 'react'
+import React, {useContext, useEffect, useState} from 'react'
 import styles from './page.module.css'
 import Image from 'next/image'
 import MainArticle from './components/mainArticle/MainArticle'
@@ -10,6 +10,7 @@ import { ScrollContext } from './helper/scrollToContext'
 import {onLightnessChange} from './helper/lightnessChangeFunction'
 import arrowPic from '../images/svg/arrow.svg'
 import headerPic from '../images/svg/headerPic.svg'
+import { ThemeContext } from './helper/themeContext'
 
 
 export default function Home() {
@@ -18,8 +19,8 @@ export default function Home() {
   const [imageFadeIn, setImageFadeIn] = useState<number>(0)
   const [saturation, setSaturation] = useState<number>(100);
   const [lightness, setLightness] = useState<number>(90);
-  const [isDay, setIsDay] = useState<'day' | 'midDay' | 'night'>('day');
   const { topPageRef, projectsRef, achievementRef, contactMeRef} = useContext(ScrollContext)
+  const {theme, setTheme} = useContext(ThemeContext)
 
   const handleOnScroll = () => {
     const winWidth = window.innerWidth;
@@ -40,12 +41,12 @@ export default function Home() {
 
   useEffect(()=>{
     window.addEventListener('scroll', handleOnScroll, {passive: true})
-    onLightnessChange(lightness, setHue,setSaturation, setIsDay);
+    onLightnessChange(lightness, setHue,setSaturation, setTheme);
 
     return(()=>{
       window.removeEventListener('scroll', handleOnScroll)
     })
-  },[lightness])
+  },[lightness, setTheme])
 
   //Scrolls to top of page if user refreshes the page
   useEffect(()=>{
@@ -57,7 +58,7 @@ export default function Home() {
 
 
   return (
-    <main className={isDay === 'day' ? styles.mainDay : (isDay === 'night' ? styles.mainNight : styles.mainmidDay)} style={{backgroundColor:`hsl(${hue},${saturation}%,${lightness}%)`}}>
+    <main className={theme === 'day' ? styles.mainDay : (theme === 'night' ? styles.mainNight : (theme === 'default' ? styles.default : styles.mainmidDay))} style={{backgroundColor:`hsl(${hue},${saturation}%,${lightness}%)`}}>
       <header className={styles.header}  ref={topPageRef}>
           <Image
           src={headerPic}

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import NavBar from './components/navBar/NavBar'
 import {ScrollProvider} from './helper/scrollToContext'
+import {ThemeProvider} from './helper/themeContext'
 import Footer from './components/footer/Footer'
 import { Analytics } from '@vercel/analytics/react'
 import { Montserrat} from 'next/font/google'
@@ -27,11 +28,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
+        <ThemeProvider>
         <ScrollProvider>
           <NavBar />
           {children}
           <Footer />
         </ScrollProvider>
+        </ThemeProvider>
         <Analytics />
         </body>
     </html>
