@@ -17,6 +17,8 @@ export default function Home() {
   const [hue, setHue] = useState<number>(44);
   const [imageFadeOut, setImageFadeOut] = useState<number>(100)
   const [imageFadeIn, setImageFadeIn] = useState<number>(0)
+  const [imageSlideFade, setImageSlideFade] = useState<number>(100)
+  const [imageSlideOut, setImageSlideOut] = useState<number>(50)
   const [saturation, setSaturation] = useState<number>(100);
   const [lightness, setLightness] = useState<number>(90);
   const { topPageRef, projectsRef, achievementRef, contactMeRef} = useContext(ScrollContext)
@@ -32,10 +34,15 @@ export default function Home() {
     }
     let yMax = Math.floor(window.screenY / 100)
     let imageFadeOutNumber = (((yMax+100) - (yPosition * 18)))
+    let imageSlideOutFadeNumber = (((yMax+100)-(yPosition * 50) )/100)
+    let imageSlideOutNumber = (((yMax+100) - (yPosition * 380)))
     let imageFadeInNumber = (((yPosition * 30) -(yMax+100))/100)
     let newNum = ((yMax - yPosition) * 1.5) + 90;
     setImageFadeOut(imageFadeOutNumber)
     setImageFadeIn(imageFadeInNumber)
+    setImageSlideOut(imageSlideOutNumber)
+    setImageSlideFade(imageSlideOutFadeNumber)
+    
     setLightness(newNum)
   }
 
@@ -60,6 +67,7 @@ export default function Home() {
   return (
     <main className={theme === 'day' ? styles.mainDay : (theme === 'night' ? styles.mainNight : (theme === 'default' ? styles.default : styles.mainmidDay))} style={{backgroundColor:`hsl(${hue},${saturation}%,${lightness}%)`}}>
       <header className={styles.header}  ref={topPageRef}>
+        <section style={{transform:`translate(${imageSlideOut}px)`, opacity:`${imageSlideFade}`}}>
           <Image
           src={headerPic}
           alt='Picture of my name Nick Chan'
@@ -67,7 +75,8 @@ export default function Home() {
           width={500}
           className={styles.headerPic}
           />
-        <section className={styles.subHeader} style={{opacity:`${imageFadeOut}%`, transform:`translate(0 ${imageFadeOut})`}}>
+        </section>
+        <section className={styles.subHeader} style={{opacity:`${imageFadeOut}%`}}>
           <Image
           src={arrowPic}
           alt='Picture of an arrow pointing down'

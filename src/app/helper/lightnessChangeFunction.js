@@ -1,9 +1,9 @@
 export const onLightnessChange = (lightness, setHue, setSaturation, setTheme) => {
 
-  if (lightness > 88) {
+  if (lightness > 88.6) {
     setTheme('default')
   }
-  if (lightness < 88) {
+  if (lightness < 88.6) {
     setTheme('day')
   }
   if (lightness <= 85) {
