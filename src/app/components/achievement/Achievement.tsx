@@ -15,6 +15,7 @@ export default function Achievement() {
                     alt={game.alt}
                     width={game.width}
                     height={game.height}
+                    game={game.game}
                     paragraph={game.paragraph}
                     styleName={game.styleName}
                     />

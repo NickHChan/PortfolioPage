@@ -9,13 +9,14 @@ type Props = {
     alt: string;
     width:number;
     height:number;
+    game: string;
     paragraph: string;
     styleName: string;
     addtional?: string;
 }
 
 
-export default function Article({src, alt, width, height, paragraph, styleName, addtional}:Props) {
+export default function Article({src, alt, width, height, game, paragraph, styleName, addtional}:Props) {
   return (
     <article className={styles[styleName]}>
         <Image
@@ -26,12 +27,16 @@ export default function Article({src, alt, width, height, paragraph, styleName, 
             quality={80}
             className={styles.image}
         />
-        <p>
+        <article>
+            <p className={styles.gameTitle}>
+              {game}
+            </p>
+            <br/>
             {paragraph}
             <br/>
             <br/>
             {addtional}
-        </p>
+        </article>
     
     </article>
   )

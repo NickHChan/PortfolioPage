@@ -9,6 +9,7 @@ interface Games {
     alt: string;
     width: number;
     height: number;
+    game: string;
     paragraph: string;
     styleName: string;
 }
@@ -19,7 +20,8 @@ export const listOfGames: Games[] = [
         alt: "Rank: Radiant",
         width: 100,
         height: 100,
-        paragraph: "Reached Radiant in Valorant",
+        game: 'Valorant',
+        paragraph: "A game developed by Riot Games, is a tactical first-person shooter where teams of five players compete against each other. Achieving the rank of Radiant signifies that a player is in the top 0.1% of all Valorant players.",
         styleName: "rank",
     },
     {
@@ -27,7 +29,8 @@ export const listOfGames: Games[] = [
         alt: "Elo: 20,376",
         width: 100,
         height: 100,
-        paragraph: "Reached 20,376 Elo in Counter-Strike 2",
+        game: 'Counter-Strike 2',
+        paragraph: "A game developed by Valve, is a tatical first-person shooter where teams of five players compete against each other. Achieveing the elo of 20,376 signifies that a player is in the top 2% of all Counter-strike 2 players.",
         styleName: "rank",
     },
     {
@@ -35,7 +38,8 @@ export const listOfGames: Games[] = [
         alt: "Diamond in League of Legends",
         width: 100,
         height: 100,
-        paragraph: "Reached Diamond rank in League of Legends",
+        game: 'League of Legends',
+        paragraph: "A game developed by Riot Games, is a multiplayer online battle arena where teams of five players compete against each other. Achieving the rank of Diamond signifies that a player is in the top 3.8% of all League players.",
         styleName: "rank",
     },
     {
@@ -43,7 +47,8 @@ export const listOfGames: Games[] = [
         alt: "TBD rank in The Finals",
         width: 100,
         height: 100,
-        paragraph: `Currently grinding "The Finals" rank `,
+        game: 'The Finals',
+        paragraph: `A game developed by Embark Studios, is a fast paced first-person shooter where teams of three compete against each other for objectives. Currently grinding to be placed into a rank `,
         styleName: "rank",
     }
 ]
