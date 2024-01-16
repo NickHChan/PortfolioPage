@@ -3,6 +3,7 @@ import React, {useContext, useEffect, useState} from 'react'
 import styles from './page.module.css'
 import Image from 'next/image'
 import MainArticle from './components/mainArticle/MainArticle'
+import NightArticle from './components/nightArticle/NightArticle'
 import Achievement from './components/achievement/Achievement'
 import Projects from './components/projects/Projects'
 import ContactMe from './components/contactme/ContactMe'
@@ -11,6 +12,7 @@ import {onLightnessChange} from './helper/lightnessChangeFunction'
 import arrowPic from '../images/svg/arrow.svg'
 import headerPic from '../images/svg/headerPic.svg'
 import { ThemeContext } from './helper/themeContext'
+
 
 
 export default function Home() {
@@ -35,7 +37,7 @@ export default function Home() {
     let yMax = Math.floor(window.screenY / 100)
     let imageFadeOutNumber = (((yMax+100) - (yPosition * 18)))
     let imageSlideOutFadeNumber = (((yMax+100)-(yPosition * 48) )/100)
-    let imageSlideOutNumber = (((yMax+100) - (yPosition * 300)))
+    let imageSlideOutNumber = (((yMax+60) - (yPosition * 330)))
     let imageFadeInNumber = (((yPosition * 30) -(yMax+100))/100)
     let newNum = ((yMax - yPosition) * 1.5) + 90;
     setImageFadeOut(imageFadeOutNumber)
@@ -87,11 +89,13 @@ export default function Home() {
           <p>Scroll down to know more about me!</p>
         </section>
       </header>
-      <article className={styles.name} style={{opacity:`${imageFadeIn}`}}>About Daytime Nick</article>
+      <article className={styles.aboutMe1} style={{opacity:`${imageFadeIn}`}}>About Daytime Nick</article>
       <MainArticle/>
       <section ref={projectsRef}></section>
       <h6 className={styles.subTitle1}>A Few Projects I Have Worked On</h6>
       <Projects/>
+      <article className={styles.aboutMe2} >About Nighttime Nick</article>
+      <NightArticle/>
       <h6 className={styles.subTitle2} ref={achievementRef}>My Gaming Achievements</h6>
       <Achievement/>
       <section ref={contactMeRef}></section>

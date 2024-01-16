@@ -27,7 +27,7 @@ export const listOfGames: Games[] = [
         alt: "Elo: 20,376",
         width: 100,
         height: 100,
-        paragraph: "Reached 19,600 Elo in Counter-Strike 2",
+        paragraph: "Reached 20,376 Elo in Counter-Strike 2",
         styleName: "rank",
     },
     {

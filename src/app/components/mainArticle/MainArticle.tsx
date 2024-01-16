@@ -4,11 +4,10 @@ import styles from './MainArticle.module.css'
 export default function MainArticle() {
   return (
     <section className={styles.main}>
-        <p>Hello! I am a dedicated web developer with a unique background in healthcare and management. 
-      <br/><br/>My journey into the world of technology is self-driven, marked by a passion for learning and mastering programming.
-      <br/><br/>I am an enthusiastic gamer and have a appreciation for Psytrance music. 
-      <br/><br/>Currently, I am immersed in the concept of computer science. My goal is to leverage this knowledge and passion for learning into
-      a successful and fulfilling career.
+      <p>Hello! I am a web developer with a distinctive background in healthcare and management.<br/><br/> 
+          My journey into technology has been self-driven, fueled by an unwavering passion for learning and appreciation for the ever change of new technologies.<br/><br/>
+          Currently, I am honing my skills in front-end development, with a clear goal to evolve into a full-stack developer.<br/><br/>
+          Immersed in the world of computer science, I am eager to integrate this knowledge and my enthusiasm for continuous learning into a successful and rewarding career.
       </p>
     </section>
 
