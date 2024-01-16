@@ -3,18 +3,15 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: fit-content;
-    height: fit-content;
     position: fixed;
-    margin: 4% auto;
     align-items: flex-end;
-    top: 17%;
+    bottom: 25rem;
     z-index: 100;
-    left: 8.5rem;
+    left: 3.2rem
 }
 
 .hoverMenu{
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     font-size: 2rem;
@@ -23,7 +20,7 @@
     border-radius: 1rem;
     border: transparent;
     color: #f7f7ffff;
-    top: 6rem;
+    right: 4rem
 }
 
 .hoverMenu:hover{
@@ -34,14 +31,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: -4rem;
 }
 .subMenuBG{
     position: absolute;
     display: flex;
     height: 200px;
-    width: 200px;
-    right: -4rem;
+    width: 180px;
+    margin: 0;
+    padding: 0;
 }
 
 .button{
@@ -56,123 +53,4 @@
     cursor: pointer;
     scale: 1.19;
     color: rgb(233, 94, 233);
-}
-
-
-@media(max-width:3440px){
-    .footer{
-        left: 14.7rem;
-    }
-}
-@media(max-width:2560px){
-    .footer{
-        left: 9.4rem;
-    }
-}
-
-@media(max-width:1920px){
-    .footer{
-        left: 5rem;
-    }
-}
-@media(max-width:1680px){
-    .footer{
-        left: 2.1rem;
-    }
-}
-@media(max-width:1536px){
-    .footer{
-        left: 3rem;
-    }
-}
-@media(max-width:1440px){
-    .footer{
-        left: 2.2rem;
-    }
-}
-
-@media(max-width:1366px){
-    .footer{
-        left: 2.6rem;
-    }
-    .button{
-        font-size: 20px;
-    }
-    .hoverMenu{
-        left: 4.4rem;
-    }
-    .subMenuBG{
-        width: 180px;
-    }
-
-}
-@media(max-width:1280px){
-    .footer{
-        left: 2rem;
-    }
-
-}
-@media (max-width: 1024px){
-    .footer{
-        left: 3.4rem;
-    }
-    .subMenuBG{
-        margin-top: 0.3rem;
-    }
-
-} 
-
-@media (max-width: 768px) {
-    .footer{
-        left: 2.4rem;
-    }
-    .button{
-        font-size: 20px;
-    }
-    .hoverMenu{
-        left: 3.4rem;
-        top: 4.5rem;
-    }
-    .button:hover{
-        scale: 1.1;
-    }
-    .subMenuBG{
-        width: 160px;
-    }
-}
-
-@media(max-width: 600px){
-    .footer{
-        left: 3.4rem;
-    }
-    .button{
-        font-size: 10px;
-    }
-    .hoverMenu{
-        top: 3rem;
-        left: 0.4rem;
-    }
-
-}
-@media (max-height: 568px) {
-    .footer{
-        top: 9rem;
-        left: 5.3rem;
-    }
-    .button{
-        font-size: 10px;
-    }
-    .hoverMenu{
-        top: 3rem;
-        left: 0.4rem;
-    }
-}
-
-@media (max-height:360px){
-    .footer{
-        left: 4.2rem;
-    }
-    .subMenuBG{
-        margin-top: 1rem;
-    }
 }

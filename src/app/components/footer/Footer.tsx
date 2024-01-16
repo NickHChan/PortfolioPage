@@ -119,7 +119,7 @@ const subMenuAnimation3 = {
                         onHoverStart={toggleHoverMenuOn}
                         onHoverEnd={toggleHoverMenuOff}
                         >
-                        <button className={styles.button} onClick={scrollToProject}>Projects</button>
+                        <button className={styles.button} onClick={scrollToProject}>PROJECTS</button>
                     </motion.div>
                     <motion.div
                         initial = 'close'
@@ -128,7 +128,7 @@ const subMenuAnimation3 = {
                         onHoverStart={toggleHoverMenuOn}
                         onHoverEnd={toggleHoverMenuOff}
                         >
-                        <button className={styles.button} onClick={scrollToAchievements}>Achievements</button>
+                        <button className={styles.button} onClick={scrollToAchievements}>ACHIEVEMENTS</button>
                     </motion.div>
                     <motion.div
                         initial = 'close'
@@ -137,7 +137,7 @@ const subMenuAnimation3 = {
                         onHoverStart={toggleHoverMenuOn}
                         onHoverEnd={toggleHoverMenuOff}
                         >
-                        <button className={styles.button} onClick={scrollToContactMe}>Contact Me</button>
+                        <button className={styles.button} onClick={scrollToContactMe}>CONTACT ME</button>
                     </motion.div>            
             </section>
 

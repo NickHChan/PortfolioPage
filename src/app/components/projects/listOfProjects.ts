@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image"
 import questionMark from '../../../images/question_marks.svg'
 import allStarsImg from '../../../images/allstars.staypluggedin.gg.webp'
 import chainLImage from '../../../images/ChainLPicture.webp'
-import cineTrainerImage from '../../../images/CineTrainerPic.webp'
+import cineTrainerImage from '../../../images/CineTrainerPicOg.webp'
 import nextJsSvg from '../../../images/svg/nextjs-icon-svgrepo-com.svg'
 import typeScriptSvg from '../../../images/svg/typescript-svgrepo-com.svg'
 import cssSvg from '../../../images/svg/css-3-svgrepo-com.svg'

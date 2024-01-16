@@ -75,6 +75,7 @@
   text-align: center;
 }
 .name{
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 3rem;
   font-weight: 800;
   color: rgb(78, 85, 93);
@@ -83,6 +84,7 @@
   margin-left: -40px;
 }
 .subTitle1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
   color: rgb(78, 85, 93);
   font-weight: 800;
   font-size: 3rem;
@@ -90,6 +92,7 @@
 
 }
 .subTitle2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
   color: #dae6f5ff;
   font-size: 3rem;
   font-weight: 800;
