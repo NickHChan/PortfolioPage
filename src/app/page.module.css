@@ -73,10 +73,11 @@
   margin-top: -25%;
   margin-bottom: 50%;
   text-align: center;
+  font-family: 'sortsMillGoudy';
 }
 .aboutMe1,
 .aboutMe2{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'sortsMillGoudy';
   font-size: 3rem;
   font-weight: 800;
   color: rgb(78, 85, 93);
@@ -88,18 +89,23 @@
   margin-left: -40px;
 }
 .subTitle1{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'sortsMillGoudy';
   color: rgb(78, 85, 93);
   font-weight: 800;
   font-size: 3rem;
   margin-bottom: -10%;
 
 }
-.subTitle2{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+.subTitle2,
+.subTitle3{
+  font-family: 'sortsMillGoudy';
   color: #dae6f5ff;
   font-size: 3rem;
   font-weight: 800;
+}
+
+.subTitle3{
+  color: rgb(219, 189, 248);
 }
 
 @media(max-width:3440px){

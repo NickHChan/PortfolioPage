@@ -41,7 +41,8 @@
     padding: 0;
 }
 
-.button{
+.dayButton,
+.nightButton{
     background-color:transparent;
     color: #2d373f;
     border: none;
@@ -49,7 +50,12 @@
     font-size: 25px;
 }
 
-.button:hover{
+.nightButton{
+    color: white;
+}
+
+.dayButton:hover,
+.nightButton:hover{
     cursor: pointer;
     scale: 1.19;
     color: rgb(233, 94, 233);

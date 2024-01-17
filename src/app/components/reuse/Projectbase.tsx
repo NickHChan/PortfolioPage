@@ -60,10 +60,6 @@ export default function Project({src, alt, width, height, webLink, frameWork, la
                 <Image src={hosting} alt='the platform the website was hosted on' height={25} width={25} className={styles.techIcon}/>
                 <p className={styles[`${hostingName}`]}>{hostingName}</p>
            </section>
-           <section className={styles.role}>
-            <p>Role:</p>
-              {role}
-           </section>
            <summary className={styles.summary}>
             {project_summary}
            </summary>

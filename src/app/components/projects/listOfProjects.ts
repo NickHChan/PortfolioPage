@@ -44,7 +44,13 @@ export const listOfProjects: Projects[] = [
         stylingName: 'Sass',
         hostingName: 'Vercel',
         project_Name: 'CineTrainer',
-        project_summary: `A website used to display a list of movie actors in a movie to help users train for Cine2Nerdle's new battle mode`,
+        project_summary: `I came across a new player vs player mode on Cine2Nerdle, named Cine2Nerdle Battle, which required knowledge of movies, directors, and actors.\n
+        My objective was to create a website that would assist individuals with limited movie knowledge, like myself, to train and improve their familiarity with movie-related information.\n
+        As the sole person on this project, I carefully planned the website using Figma and Notion. For version control, I utilized Git. \n
+        I developed the site using Next.js for efficient web page routing and TypeScript as the primary programming language.\n
+        The backbone of the project was the TMDB API, which allowed us to fetch and display specific movie and actor details in an organized manner.\n
+        The website effectively provides a platform for users to enhance their movie knowledge, making them more competitive in Cine2Nerdle Battle. \n
+        This project honed my skills in front-end web development and API integration.`,
         role: 'Solo-Developer Work',
         webLink: '',
         linkworks: false

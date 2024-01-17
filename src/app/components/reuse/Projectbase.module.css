@@ -12,6 +12,7 @@
     margin-top: 5rem;
     border-radius: 2rem;
     text-align: center;
+    font-family: 'montserrat';
 }
 .projectInfoContainer{
     width: 100%;
@@ -54,9 +55,9 @@
     color: black;
 }
 .header{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 600;
-    font-size: 1.75rem;
+    font-family: 'sortsMillGoudy';
+    font-weight: bold;
+    font-size: 2rem;
 }
 .tech0,
 .tech1,
@@ -109,24 +110,11 @@
     color: rgb(251, 255, 0)!important;
 }
 
-
-.role{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-}
-.role p{
-    font-family: sans-serif;
-}
-
 .summary{
-    text-align: center;
-    font-size: 0.85rem;
-    line-height: 1.5rem;
-    font-weight: bold;
-    width: 375px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.6rem;
+    width: 500px;
 }
 
 @media (max-width: 1280px) {

@@ -6,6 +6,7 @@ import {ThemeProvider} from './helper/themeContext'
 import Footer from './components/footer/Footer'
 import { Analytics } from '@vercel/analytics/react'
 import { Montserrat} from 'next/font/google'
+import { Sorts_Mill_Goudy } from 'next/font/google'
 
 
  const montserrat = Montserrat({
@@ -13,6 +14,10 @@ import { Montserrat} from 'next/font/google'
   weight: ["400","600","800"],
 })
 
+const sortsMillGoudy = Sorts_Mill_Goudy({
+  subsets: ["latin"],
+  weight: ["400"]
+})
 
 export const metadata: Metadata = {
   title: `Nick's Website`,
@@ -27,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
+      <body className={`${montserrat.className} ${sortsMillGoudy.className}`}>
         <ThemeProvider>
         <ScrollProvider>
           <NavBar />

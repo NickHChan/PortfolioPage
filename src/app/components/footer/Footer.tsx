@@ -3,9 +3,11 @@ import React, {useState, useContext} from 'react'
 import styles from './Footer.module.css'
 import { motion } from 'framer-motion';
 import {ScrollContext} from '../../helper/scrollToContext'
+import { ThemeContext } from '@/app/helper/themeContext';
 
 export default function Footer() {
-const {scrollToProject, scrollToAchievements, scrollToContactMe} = useContext(ScrollContext)
+const {scrollToProject, scrollToAchievements, scrollToContactMe} = useContext(ScrollContext);
+const {theme} = useContext(ThemeContext);
 const [isHover, toggleHover] = useState<boolean>(false);
 
 const toggleHoverMenuOn = () => {
@@ -119,7 +121,7 @@ const subMenuAnimation3 = {
                         onHoverStart={toggleHoverMenuOn}
                         onHoverEnd={toggleHoverMenuOff}
                         >
-                        <button className={styles.button} onClick={scrollToProject}>PROJECTS</button>
+                        <button className={theme === 'day' || theme === 'default' ? styles.dayButton : styles.nightButton} onClick={scrollToProject}>PROJECTS</button>
                     </motion.div>
                     <motion.div
                         initial = 'close'
@@ -128,7 +130,7 @@ const subMenuAnimation3 = {
                         onHoverStart={toggleHoverMenuOn}
                         onHoverEnd={toggleHoverMenuOff}
                         >
-                        <button className={styles.button} onClick={scrollToAchievements}>ACHIEVEMENTS</button>
+                        <button className={theme === 'day' || theme === 'default' ? styles.dayButton : styles.nightButton} onClick={scrollToAchievements}>ACHIEVEMENTS</button>
                     </motion.div>
                     <motion.div
                         initial = 'close'
@@ -137,7 +139,7 @@ const subMenuAnimation3 = {
                         onHoverStart={toggleHoverMenuOn}
                         onHoverEnd={toggleHoverMenuOff}
                         >
-                        <button className={styles.button} onClick={scrollToContactMe}>CONTACT ME</button>
+                        <button className={theme === 'day' || theme === 'default' ? styles.dayButton : styles.nightButton} onClick={scrollToContactMe}>CONTACT ME</button>
                     </motion.div>            
             </section>
 
