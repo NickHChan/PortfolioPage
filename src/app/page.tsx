@@ -6,6 +6,7 @@ import MainArticle from './components/mainArticle/MainArticle'
 import NightArticle from './components/nightArticle/NightArticle'
 import Achievement from './components/achievement/Achievement'
 import Projects from './components/projects/Projects'
+import SongArtist from './components/songArtist/SongArtist'
 import ContactMe from './components/contactme/ContactMe'
 import { ScrollContext } from './helper/scrollToContext'
 import {onLightnessChange} from './helper/lightnessChangeFunction'
@@ -98,6 +99,8 @@ export default function Home() {
       <NightArticle/>
       <h6 className={styles.subTitle2} ref={achievementRef}>My Gaming Achievements</h6>
       <Achievement/>
+      <h6 className={styles.subTitle2} ref={achievementRef}>My Favourite Music Artist</h6>
+      <SongArtist/>
       <section ref={contactMeRef}></section>
       <ContactMe/>
     </main>

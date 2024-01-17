@@ -1,24 +1,30 @@
 
 
-.rank{
+.rank,
+.band{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    border: 0.3rem solid rgb(34, 102, 151);
+    border: 0.3rem solid #226697;
     font-size: 0.9rem;
     height: 400px;
     width: 250px;
-    background-color: rgb(153, 171, 192);
+    background-color: #99abc0;
     text-align: center;
     border-radius: 0.5rem;
     gap: 2rem;
     padding-top: 1rem;
 }
+.band{
+    color: rgb(231, 232, 248);
+    border-color: #223797;
+    background-color: #99a0c0;
+}
 .gameTitle{
     font-size: 1rem;
     font-weight: bold;
-    color: rgb(32, 32, 32);
+    color: rgb(19, 18, 63);
 }
 .rank:hover{
     border-color: #f9d1d5ff;

@@ -1,0 +1,16 @@
+.achievenmentGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "one two three";
+    gap: 2rem;
+    margin-bottom: 400px;
+    padding: 3rem 1.2rem;
+    border-radius: 3rem;
+    font-weight: bold;
+}
+
+.band0{
+    grid-area: two;
+}
