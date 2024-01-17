@@ -1,13 +1,13 @@
 
 .main{
-    background-color: rgba(0, 0, 0, 0.842);
+    background-color: rgba(0, 0, 0, 0.055);
     color: rgb(255, 255, 255);
     max-width: 900px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     line-height: 2.5rem;
     font-family: 'montserrat';
 }

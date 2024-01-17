@@ -27,10 +27,13 @@ export default function Projects() {
                   <ProjectBase 
                     src={project.src}
                     alt={project.alt}
-                    width={450}
-                    height={500}
+                    width={500}
+                    height={550}
                     project_Name={project.project_Name}
                     project_summary={project.project_summary}
+                    project_summary2= {project.project_summary2}
+                    project_summary3={project.project_summary3}
+                    project_summary4={project.project_summary4}
                     frameWork={project.frameWork}
                     language={project.language}
                     styling={project.styling}

@@ -7,10 +7,11 @@
     background-color: rgba(255, 255, 255, 0.3);
     border: 0.2rem solid rgba(66, 80, 94, 0.2);
     padding: 25px;
-    width: 1000px;
-    height: 550px;
+    width: 11s00px;
+    height: 600px;
     margin-top: 5rem;
     border-radius: 2rem;
+    gap: 1rem;
     text-align: center;
     font-family: 'montserrat';
 }
@@ -18,6 +19,7 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    gap: 1.5rem;
 }
 .link,
 .linkDisabled{
@@ -89,7 +91,7 @@
     margin-top: 0.4%;
     margin-left: 0.95%;
     letter-spacing: 2px;
-    color: rgb(179, 179, 245);
+    color: #b3b3f5;
 }
 .NextJS,
 .Vercel{
@@ -101,6 +103,10 @@
     -webkit-text-stroke: 0.3px black;
     color: rgb(59, 144, 255) !important;
 }
+.Tailwind{
+    -webkit-text-stroke: 0.2px black;
+    color: rgb(106, 255, 255) !important; 
+}
 .Sass{
     -webkit-text-stroke: 0.3px black;
     color: rgb(224, 55, 207)!important;
@@ -110,11 +116,28 @@
     color: rgb(251, 255, 0)!important;
 }
 
-.summary{
+.summaryContainer0,
+.summaryContainer1,
+.summaryContainer2{
     text-align: left;
     font-size: 14px;
-    line-height: 1.6rem;
+    line-height: 1.4rem;
     width: 500px;
+}
+.summaryContainer1{
+    color: white;
+}
+.summaryContainer2{
+    font-size: 13px;
+    -webkit-text-stroke: 0.2px #b3b3f5;
+    color: white;
+}
+.summary1,
+.summary2,
+.summary3,
+.summary4{
+    margin: 0;
+    text-indent: 2rem;
 }
 
 @media (max-width: 1280px) {

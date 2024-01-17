@@ -21,13 +21,16 @@ type Props = {
     hostingName: string;
     project_Name: string;
     project_summary: string;
+    project_summary2: string;
+    project_summary3: string;
+    project_summary4: string;
     role: string;
     linkworks: boolean;
     i:number;
 }
 
 
-export default function Project({src, alt, width, height, webLink, frameWork, language, styling, hosting, project_Name,role, linkworks, project_summary,i, frameWorkName, languageName, stylingName, hostingName}:Props) {
+export default function Project({src, alt, width, height, webLink, frameWork, language, styling, hosting, project_Name, linkworks, project_summary,project_summary2, project_summary3, project_summary4, i, frameWorkName, languageName, stylingName, hostingName}:Props) {
 
   return (
     <section className={styles.projects}>
@@ -59,10 +62,21 @@ export default function Project({src, alt, width, height, webLink, frameWork, la
                 <p>Hosting:</p>
                 <Image src={hosting} alt='the platform the website was hosted on' height={25} width={25} className={styles.techIcon}/>
                 <p className={styles[`${hostingName}`]}>{hostingName}</p>
-           </section>
-           <summary className={styles.summary}>
+        </section>
+        <summary className={styles[`summaryContainer${i}`]}>
+          <p className={styles.summary1}>
             {project_summary}
-           </summary>
+          </p>
+          <p className={styles.summary2}>
+            {project_summary2}
+          </p>
+          <p className={styles.summary3}>
+            {project_summary3}
+          </p>
+          <p className={styles.summary4}>
+            {project_summary4}
+          </p>
+        </summary>
       </article>
     </section>    
     </section>
