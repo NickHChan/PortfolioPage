@@ -24,3 +24,9 @@
     grid-area: four;
 }
 
+@media (max-width: 768px){
+    .achievenmentGrid{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -29,9 +29,15 @@
 
 @media (max-width: 1280px){
     .navBody{
-        left: 6.5rem
+        left: 6.5rem;
     }
     .button{
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px){
+    .navBody{
+        top: 17rem;
     }
 }

@@ -7,7 +7,7 @@
     align-items: flex-end;
     bottom: 9rem;
     z-index: 100;
-    left: 3.5rem;
+    left: 1.3rem;
 }
 
 .hoverMenu{
@@ -72,5 +72,24 @@
     .dayButton,
     .nightButton{
     font-size: 15px;
+    }
+    .dayButton:hover,
+    .nightButton:hover{
+    cursor: pointer;
+    scale: 1.1;
 }
+}
+
+@media (max-width: 768px){
+    .footer{
+        left: 1rem;
+        bottom: 17rem;
+    }
+    .hoverMenu{
+        right: 0.8rem;
+    }
+    .dayButton,
+    .nightButton{
+    font-size: 10px;
+    }
 }

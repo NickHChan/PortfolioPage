@@ -158,7 +158,8 @@
 
 @media (max-width: 768px) {
   .subTitle1,
-  .subTitle2{
+  .subTitle2,
+  .subTitle3{
     font-size: 2rem;
   }
 

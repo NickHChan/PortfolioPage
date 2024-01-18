@@ -56,7 +56,10 @@
 
 /* md */
 @media (max-width: 768px) {
-
+    .rank{
+        height: 600px;
+        width: 250px;
+    }
     .image{
         height: 100px;
         width: 100px;
