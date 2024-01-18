@@ -44,15 +44,6 @@
     }
 }
 
-/* lg */
-@media (max-width: 1024px) {
-
-    .rank{
-        height: 250px;
-        width: 100px;
-        gap: 0;
-    }
-}
 
 /* md */
 @media (max-width: 768px) {

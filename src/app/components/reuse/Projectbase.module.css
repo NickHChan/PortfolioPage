@@ -140,6 +140,8 @@
     text-indent: 2rem;
 }
 
+
+
 @media (max-width: 1280px) {
     .projects{
         width: 1000px;
@@ -157,12 +159,12 @@
 /* lg */
 @media (max-width: 1024px) {
     .projects{
-        width: 700px;
-        height: 400px;
+        width: 900px;
+        height: 520px;
 
     }
     .header{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .techIcon{
         height: 20px;
@@ -173,7 +175,7 @@
         gap: 1rem;
     }
     .image{
-        height: 400px;
+        height: 490px;
         width: 320px;
     }
 }

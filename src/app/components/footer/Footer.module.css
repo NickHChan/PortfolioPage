@@ -61,6 +61,21 @@
     color: rgb(233, 94, 233);
 }
 
+@media (max-width: 1366px){
+    .footer{
+        left: 1.4rem;
+    }
+    .hoverMenu{
+        right: 4.3rem;
+    }
+}
+
+@media (max-width: 1440px){
+    .footer{
+        left: 0.9rem;
+    }
+}
+
 @media (max-width: 1280px){
     .footer{
         left: 1rem
@@ -80,6 +95,12 @@
 }
 }
 
+@media (max-width: 1024px){
+    .footer{
+        left: -0.4rem;
+    }
+}
+
 @media (max-width: 768px){
     .footer{
         left: 1rem;
@@ -91,5 +112,18 @@
     .dayButton,
     .nightButton{
     font-size: 10px;
+    }
+}
+
+@media (max-width: 412px){
+    .footer{
+        left: 1.2rem;
+        bottom: 10rem;
+    }
+} 
+
+@media (max-width: 280px){
+    .footer{
+        bottom: 5rem;
     }
 }

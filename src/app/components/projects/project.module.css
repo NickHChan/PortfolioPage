@@ -25,6 +25,13 @@
         height: 950px;
     }
 }
+
+@media (max-width: 1366px){
+    .stickyBody{
+        height: 890px;
+    }
+}
+
 @media (max-width: 1280px){
     .projectInfoContainer{
         left: 36.6%;
@@ -36,7 +43,10 @@
 /* lg */
 @media (max-width: 1024px) {
     .projectInfoContainer{
-        left: 37.5%
+        left: 36.6%
+    }
+    .stickyBody{
+        height: 695px;
     }
 }
 

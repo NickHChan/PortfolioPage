@@ -6,7 +6,7 @@
     align-items: flex-end;
     position: fixed;
     margin: 4% auto;
-    left: 12rem;
+    left: 11em;
     z-index: 100;
     font-family: 'montserrat';
     top: 9rem;
@@ -38,6 +38,7 @@
 
 @media (max-width: 768px){
     .navBody{
+        left: 6.5rem;
         top: 17rem;
     }
 }
