@@ -125,6 +125,17 @@
 .subTitle1{
   margin-bottom: 7%;
 }
+@media(max-width: 1280px){
+  .header{
+    margin-top: 10rem;
+  }
+  .headerPic{
+    height: 350px;
+  }
+  .subTitle1{
+    margin-bottom: 0;
+  }
+}
 @media (max-width: 1024px) {
   .subTitle1,
   .subTitle2{

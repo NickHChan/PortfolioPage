@@ -6,7 +6,7 @@
     position: sticky;
     top: 0;
     display: flex;
-    height: 800px;
+    height: 1200px;
     overflow: hidden;
     align-items: center;
 
@@ -21,32 +21,12 @@
 
 }
 
-@media(min-width:3440px){
-    .stickyBody{
-        height: 1500px;
-    }
-    .projectInfoContainer{
-        left:40.5%
-     }
-}
-@media(max-width:1920px){
-    .stickyBody{
-        height: 970px;
-    }
-}
-@media(max-width:1536px){
-    .stickyBody{
-        height: 810px;
-    }
-}
-@media(max-width:1440px){
- .projectInfoContainer{
-    left:36.5%
- }
-}
 @media (max-width: 1280px){
     .projectInfoContainer{
         left: 36.6%;
+    }
+    .stickyBody{
+        height: 800px;
     }
 }
 /* lg */

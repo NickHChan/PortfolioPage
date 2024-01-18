@@ -7,7 +7,7 @@
     background-color: rgba(255, 255, 255, 0.3);
     border: 0.2rem solid rgba(66, 80, 94, 0.2);
     padding: 25px;
-    width: 11s00px;
+    width: 1100px;
     height: 600px;
     margin-top: 5rem;
     border-radius: 2rem;
@@ -142,27 +142,15 @@
 
 @media (max-width: 1280px) {
     .projects{
-        width: 900px;
-        height: 450px;
-    }
-    .header{
-        font-size: 1.25rem;
-    }
-    .tech{
-        width: 200px;
-    }
-    .tech p,
-    .role,
-    .summary{
-        font-size: 0.75rem;
-    }
-    .techIcon{
-        height: 22px;
-        width: 22px;
+        width: 1000px;
     }
     .image{
-        height: 450px;
-        width: 400px;
+        width: 450px;
+    }
+    .summaryContainer0,
+    .summaryContainer1,
+    .summaryContainer2{
+        font-size: 12px;
     }
 }
 
@@ -192,64 +180,5 @@
     .image{
         height: 400px;
         width: 320px;
-    }
-}
-
-/* md */
-@media (max-width: 768px) {
-    .projects{
-        width: 500px;
-        height: 350px;
-
-    }
-    .projectInfo{
-        width: 250px;
-    }
-    .header{
-        font-size: 0.55rem;
-    }
-    .summary{
-        width: 200px;
-    }
-    .tech{
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-    }
-    .tech p{
-        margin: 0;
-    }
-    .tech p,
-    .role,
-    .summary{
-        font-size: 0.35rem;
-    }
-    .techIcon{
-        height: 15px;
-        width: 15px;
-    }
-    .link,
-    .linkDisabled{
-        gap: 1rem;
-    }
-    .image{
-        height: 350px;
-        width: 250px;
-    }
-}
-
-/* sm */
-@media (max-width: 640px) {
-    .projects{
-        width: 350px;
-        height: 300px;
-
-    }
-    .summary{
-        width: 170px;
-    }
-    .image{
-        height: 300px;
-        width: 160px;
     }
 }

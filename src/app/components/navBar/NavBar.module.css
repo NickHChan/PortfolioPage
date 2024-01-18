@@ -4,10 +4,9 @@
     justify-content: space-between;
     flex-direction: column;
     align-items: flex-end;
-    width: 20%;
     position: fixed;
     margin: 4% auto;
-    left: -10%;
+    left: 12rem;
     z-index: 100;
     font-family: 'montserrat';
     top: 9rem;
@@ -28,28 +27,11 @@
     scale: 1.2;
 }
 
-/* xl */
-@media (max-width: 1280px) {
+@media (max-width: 1280px){
     .navBody{
-        top: -1rem;
+        left: 6.5rem
     }
-}
-
-@media (max-width: 1090px){
-    .navBody{
-        left: -3.5rem;
-        top: -1rem;
-    }
-} 
-
-@media (max-width: 768px) {
-    .navBody{
-        left: -2rem;
-        top: 1rem;
-    }
-}
-@media(max-width: 600px){
-    .navBody{
-        left: -0.5rem
+    .button{
+        font-size: 2rem;
     }
 }

@@ -5,22 +5,22 @@
     flex-direction: column;
     position: fixed;
     align-items: flex-end;
-    bottom: 25rem;
+    bottom: 9rem;
     z-index: 100;
-    left: 3.2rem
+    left: 3.5rem;
 }
 
 .hoverMenu{
     position: relative;
     display: flex;
     justify-content: center;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
+    font-size: 3rem;
+    padding: 0.2rem 1.5rem;
     background-color: #2d373f;
     border-radius: 1rem;
     border: transparent;
     color: #f7f7ffff;
-    right: 4rem
+    right: 3.7rem
 }
 
 .hoverMenu:hover{
@@ -59,4 +59,18 @@
     cursor: pointer;
     scale: 1.19;
     color: rgb(233, 94, 233);
+}
+
+@media (max-width: 1280px){
+    .footer{
+        left: 1rem
+    }
+    .hoverMenu{
+        font-size: 2rem;
+        right: 1.7rem;
+    }
+    .dayButton,
+    .nightButton{
+    font-size: 15px;
+}
 }
