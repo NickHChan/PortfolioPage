@@ -18,7 +18,7 @@
     margin-bottom: 5%;
 }
 .contactMeBody p{
-    font-family: 'inter';
+    font-family: 'roboto';
     font-size: 1.2rem;
     font-weight: bold;
     color: rgb(0, 0, 0);;
@@ -38,7 +38,7 @@
 .link,
 .link:visited,
 .link:active{
-    font-family: 'montserrat';
+    font-family: 'roboto';
     text-decoration: none;
     color: #42505eff;
     margin-left: 3%;
@@ -51,7 +51,7 @@
 }
 
 .button{
-    font-family: 'montserrat';
+    font-family: 'roboto';
     background: none;
     border: none;
     color: #42505eff;
