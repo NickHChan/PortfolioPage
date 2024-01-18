@@ -20,15 +20,25 @@
     margin-bottom: 4.5%;
 
 }
-@media (width: 1440px){
+@media (width:1920px){
     .stickyBody{
-        height: 950px;
+        height: 1175px;
+    }
+}
+@media (max-width: 1536px){
+    .stickyBody{
+        height: 820px;
+    }
+}
+@media (max-width: 1440px){
+    .stickyBody{
+        height: 920px;
     }
 }
 
 @media (max-width: 1366px){
     .stickyBody{
-        height: 890px;
+        height: 910px;
     }
 }
 

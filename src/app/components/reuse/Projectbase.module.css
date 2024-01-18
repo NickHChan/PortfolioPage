@@ -100,8 +100,8 @@
 }
 .Typescript,
 .Css{
-    -webkit-text-stroke: 0.3px black;
-    color: rgb(59, 144, 255) !important;
+    -webkit-text-stroke: 0.2px black;
+    color: rgb(0, 110, 255) !important;
 }
 .Tailwind{
     -webkit-text-stroke: 0.2px black;
@@ -120,15 +120,14 @@
 .summaryContainer1,
 .summaryContainer2{
     text-align: left;
-    font-size: 14px;
-    line-height: 1.4rem;
+    font-size: 1.08rem;
+    line-height: 1.1rem;
     width: 500px;
 }
 .summaryContainer1{
     color: white;
 }
 .summaryContainer2{
-    font-size: 13px;
     -webkit-text-stroke: 0.2px #b3b3f5;
     color: white;
 }
