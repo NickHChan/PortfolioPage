@@ -27,6 +27,23 @@
     scale: 1.2;
 }
 
+@media (width: 3440px){
+    .navBody{
+        left: 9.1rem;
+    }
+}
+
+@media (width: 1920px){
+    .navBody{
+        left: 9.5rem;
+    }
+}
+@media(width:1536px){
+    .navBody{
+        left: 9.5rem;
+    }
+}
+
 @media (max-width: 1280px){
     .navBody{
         left: 6.5rem;
