@@ -13,6 +13,7 @@ export default function Achievement() {
                     <Article 
                     src={game.src}
                     alt={game.alt}
+                    url={game.url}
                     width={game.width}
                     height={game.height}
                     game={game.game}

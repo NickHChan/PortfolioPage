@@ -13,12 +13,14 @@ type Props = {
     paragraph: string;
     styleName: string;
     addtional?: string;
+    url: string;
 }
 
 
-export default function Article({src, alt, width, height, game, paragraph, styleName, addtional}:Props) {
+export default function Article({src, alt, width, height, game, paragraph, styleName, addtional, url}:Props) {
   return (
     <article className={styles[styleName]}>
+      <Link href={url} rel='noopener noreferrer' target='_blank' className={styles.link} >
         <Image
             src={src}
             alt={alt}
@@ -27,6 +29,7 @@ export default function Article({src, alt, width, height, game, paragraph, style
             quality={80}
             className={styles.image}
         />
+      </Link>
         <article>
             <p className={styles.gameTitle}>
               {game}

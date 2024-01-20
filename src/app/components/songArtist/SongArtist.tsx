@@ -13,6 +13,7 @@ export default function SongArtist() {
                     <Article 
                     src={game.src}
                     alt={game.alt}
+                    url={game.url}
                     width={game.width}
                     height={game.height}
                     game={game.name}

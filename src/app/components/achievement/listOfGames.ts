@@ -12,6 +12,7 @@ interface Games {
     game: string;
     paragraph: string;
     styleName: string;
+    url: string;
 }
 
 export const listOfGames: Games[] = [
@@ -23,6 +24,7 @@ export const listOfGames: Games[] = [
         game: 'Valorant',
         paragraph: "A game developed by Riot Games, is a tactical first-person shooter where teams of five players compete against each other. Achieving the rank of Radiant signifies that a player is in the top 0.1% of all Valorant players.",
         styleName: "rank",
+        url: 'https://playvalorant.com/',
     },
     {
         src: cs2Image,
@@ -32,6 +34,7 @@ export const listOfGames: Games[] = [
         game: 'Counter-Strike 2',
         paragraph: "A game developed by Valve, is a tatical first-person shooter where teams of five players compete against each other. Achieveing the elo of 20,376 signifies that a player is in the top 2% of all Counter-strike 2 players.",
         styleName: "rank",
+        url: 'https://www.counter-strike.net/',
     },
     {
         src: diamondImage,
@@ -41,6 +44,7 @@ export const listOfGames: Games[] = [
         game: 'League of Legends',
         paragraph: "A game developed by Riot Games, is a multiplayer online battle arena where teams of five players compete against each other. Achieving the rank of Diamond signifies that a player is in the top 3.8% of all League players.",
         styleName: "rank",
+        url: 'https://www.leagueoflegends.com/en-us/',
     },
     {
         src: theFinalsImage,
@@ -50,5 +54,6 @@ export const listOfGames: Games[] = [
         game: 'The Finals',
         paragraph: `A game developed by Embark Studios, is a fast paced first-person shooter where teams of three compete against each other for objectives. Currently grinding to be placed into a rank `,
         styleName: "rank",
+        url: 'https://www.reachthefinals.com/',
     }
 ]

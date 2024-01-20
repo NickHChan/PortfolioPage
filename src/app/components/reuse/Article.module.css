@@ -16,6 +16,7 @@
     border-radius: 0.5rem;
     gap: 2rem;
     padding-top: 1rem;
+    pointer-events: none;
 }
 .band{
     color: rgb(231, 232, 248);
@@ -29,6 +30,14 @@
 }
 .rank:hover{
     border-color: #f9d1d5ff;
+}
+.band:hover{
+    border-color: #f8ffae;
+}
+.link{
+    pointer-events: auto;
+}
+.link:hover{
     scale: 1.05;
 }
 .image{
