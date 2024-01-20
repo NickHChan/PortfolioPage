@@ -100,7 +100,7 @@ export default function Home() {
       <NightArticle/>
       <h6 className={styles.subTitle2} ref={achievementRef}>My Gaming Achievements</h6>
       <Achievement/>
-      <h6 className={styles.subTitle3} ref={achievementRef}>My Favourite Music Artists</h6>
+      <h6 className={styles.subTitle3}>My Favourite Music Artists</h6>
       <SongArtist/>
       <section ref={contactMeRef}></section>
       <ContactMe/>
