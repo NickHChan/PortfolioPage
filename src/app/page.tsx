@@ -24,45 +24,50 @@ export default function Home() {
   const [imageSlideOut, setImageSlideOut] = useState<number>(50)
   const [saturation, setSaturation] = useState<number>(100);
   const [lightness, setLightness] = useState<number>(90);
-  const { topPageRef, projectsRef, achievementRef, contactMeRef} = useContext(ScrollContext)
+  const { topPageRef, projectsRef, achievementRef, contactMeRef, aboutMeRef, scrollToAboutMe} = useContext(ScrollContext)
   const {theme, setTheme} = useContext(ThemeContext)
 
-  const handleOnScroll = () => {
-    const winWidth = window.innerWidth;
-    let yPosition;
-    if(winWidth > 768){
-      yPosition = Math.floor((window.scrollY/100)*1.3)
-    } else{
-      yPosition = Math.floor((window.scrollY/100)*2.75)
-    }
-    let yMax = Math.floor(window.screenY / 100)
-    let imageFadeOutNumber = (((yMax+100) - (yPosition * 18)))
-    let imageSlideOutFadeNumber = (((yMax+100)-(yPosition * 48) )/100)
-    let imageSlideOutNumber = (((yMax+60) - (yPosition * 330)))
-    let imageFadeInNumber = (((yPosition * 30) -(yMax+100))/100)
-    let newNum = ((yMax - yPosition) * 1.5) + 90;
-    setImageFadeOut(imageFadeOutNumber)
-    setImageFadeIn(imageFadeInNumber)
-    setImageSlideOut(imageSlideOutNumber)
-    setImageSlideFade(imageSlideOutFadeNumber)
-    
-    setLightness(newNum)
-  }
-
   useEffect(()=>{
+    const handleOnScroll = () => {
+      const winWidth = window.innerWidth;
+      let yPosition;
+      if(winWidth > 768){
+        yPosition = Math.floor((window.scrollY/100)*1.3)
+      } else{
+        yPosition = Math.floor((window.scrollY/100)*2.75)
+      }
+      let yMax = Math.floor(window.screenY / 100)
+      let imageFadeOutNumber = (((yMax+100) - (yPosition * 18)))
+      let imageSlideOutFadeNumber = (((yMax+100)-(yPosition * 48) )/100)
+      let imageSlideOutNumber = (((yMax+60) - (yPosition * 330)))
+      let imageFadeInNumber = (((yPosition * 30) -(yMax+100))/100)
+      let newNum = ((yMax - yPosition) * 1.5) + 90;
+      setImageFadeOut(imageFadeOutNumber)
+      setImageFadeIn(imageFadeInNumber)
+      setImageSlideOut(imageSlideOutNumber)
+      setImageSlideFade(imageSlideOutFadeNumber)
+      
+      setLightness(newNum)
+      if(lightness <= 85.5 && lightness >= 84){
+        scrollToAboutMe()
+      }
+    }
+
     window.addEventListener('scroll', handleOnScroll, {passive: true})
     onLightnessChange(lightness, setHue,setSaturation, setTheme);
+
 
     return(()=>{
       window.removeEventListener('scroll', handleOnScroll)
     })
-  },[lightness, setTheme])
+  },[lightness, setTheme, scrollToAboutMe])
 
   //Scrolls to top of page if user refreshes the page
   useEffect(()=>{
     window.onbeforeunload = function(){
       window.scrollTo(0, 0);
     }
+
   },[])
 
 
@@ -91,7 +96,7 @@ export default function Home() {
           <p>Scroll down to know more about me!</p>
         </section>
       </header>
-      <article className={styles.aboutMe1} style={{opacity:`${imageFadeIn}`}}>About Daytime Nick</article>
+      <article  ref={aboutMeRef} className={styles.aboutMe1} style={{opacity:`${imageFadeIn}`}}>About Daytime Nick</article>
       <MainArticle/>
       <section ref={projectsRef}></section>
       <h6 className={styles.subTitle1}>A Few Projects I Have Worked On</h6>

@@ -162,3 +162,17 @@
         gap: 0;
     }
 }
+
+@media(max-width:360px) {
+    .image{
+        height: 100px;
+        width: 100px;
+    }
+    .contactInfo{
+        gap: 0.5rem;
+        justify-content: center;
+    }
+    .contactMeBody p{
+        font-size: 0.5rem;
+    }
+}
