@@ -204,3 +204,30 @@
         width: 200px;
     }
 }
+
+@media(orientation:portrait){
+    .projects{
+        width: 300px;
+        height: 900px;
+    }
+    .image{
+        width: 200px;
+    }
+    .summaryContainer0,
+    .summaryContainer1,
+    .summaryContainer2{
+        width: 125px;
+        font-size: 9px;
+    }
+    .tech0,
+    .tech1,
+    .tech2{
+        width: 100px;
+        margin-left: -45%;
+    }
+    .tech0 p,
+    .tech1 p,
+    .tech2 p{
+        font-size: 0.45rem;
+    }
+}

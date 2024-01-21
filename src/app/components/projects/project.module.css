@@ -72,3 +72,16 @@
     }
 }
 
+@media (orientation:portrait){
+    .projectBody{
+        height: 4000px;
+    }
+    .stickyBody{
+        height: 4000px;
+    }
+    .projectInfoContainer{
+        flex-direction: column;
+        gap: 100px;
+        left: 41.7%;
+    }
+}

@@ -197,3 +197,8 @@
   }
   
 }
+@media (max-width: 360px){
+  .header{
+    margin-left: -30%;
+  }
+}

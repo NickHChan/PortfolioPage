@@ -163,7 +163,10 @@
     }
 }
 
-@media(max-width:360px) {
+@media(orientation:portrait) {
+    .contactMeBody{
+        width: 150%;
+    }
     .image{
         height: 100px;
         width: 100px;
