@@ -210,27 +210,35 @@
 
 @media(orientation:portrait){
     .projects{
-        width: 300px;
-        height: 900px;
+        width: 299px;
+        height: 1300px;
+        margin-left: 1%;
+    }
+    .header{
+        color: white;
+    }
+    .projectInfoContainer{
+        flex-direction: column;
     }
     .image{
-        width: 200px;
+        width: 330px;
     }
     .summaryContainer0,
     .summaryContainer1,
     .summaryContainer2{
-        width: 125px;
-        font-size: 9px;
+        width: 250px;
+        font-size: 12px;
     }
     .tech0,
     .tech1,
     .tech2{
         width: 100px;
-        margin-left: -45%;
+        margin-left: -25%;
+        margin-bottom: 10%;
     }
     .tech0 p,
     .tech1 p,
     .tech2 p{
-        font-size: 0.45rem;
+        font-size: 0.7rem;
     }
 }

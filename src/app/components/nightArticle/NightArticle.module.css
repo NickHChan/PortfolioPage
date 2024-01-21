@@ -49,11 +49,8 @@
     }
 }
 
-/* sm */
-@media (max-width: 640px) {
-}
-
-/* xs */
-@media (max-width: 475px) {
-
+@media (max-width: 360px){
+    .main{
+        margin-left: 10%;
+    }
 }

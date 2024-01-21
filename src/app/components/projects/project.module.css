@@ -74,14 +74,14 @@
 
 @media (orientation:portrait){
     .projectBody{
-        height: 4000px;
+        height: 5100px;
     }
     .stickyBody{
-        height: 4000px;
+        height: 5100px;
     }
     .projectInfoContainer{
         flex-direction: column;
-        gap: 100px;
+        gap: 50px;
         left: 41.7%;
     }
 }
