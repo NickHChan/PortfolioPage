@@ -232,6 +232,8 @@
     .tech0,
     .tech1,
     .tech2{
+        gap: 0.5rem;
+        column-gap: 1rem;
         width: 100px;
         margin-left: -25%;
         margin-bottom: 10%;
@@ -240,5 +242,8 @@
     .tech1 p,
     .tech2 p{
         font-size: 0.7rem;
+    }
+    .techIcon{
+        margin-top: -20%;
     }
 }

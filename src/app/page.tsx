@@ -1,5 +1,5 @@
 'use client'
-import React, {useContext, useEffect, useState} from 'react'
+import React, {useContext, useEffect, useState, useRef} from 'react'
 import styles from './page.module.css'
 import Image from 'next/image'
 import MainArticle from './components/mainArticle/MainArticle'
@@ -14,7 +14,7 @@ import arrowPic from '../images/svg/arrow.svg'
 import headerPic from '../images/svg/headerPic.svg'
 import { ThemeContext } from './helper/themeContext'
 
-
+type OrientationTypes = 'portrait-primary' | 'landscape-primary' | 'portrait-secondary' | 'landscape-secondary';
 
 export default function Home() {
   const [hue, setHue] = useState<number>(44);
@@ -70,6 +70,11 @@ export default function Home() {
 
   },[])
 
+  const orientation = useRef<OrientationTypes>();
+
+  useEffect(()=>{
+    orientation.current = window.screen.orientation.type;
+  },[orientation])
 
 
   return (
@@ -96,7 +101,7 @@ export default function Home() {
           <p>Scroll down to know more about me!</p>
         </section>
       </header>
-      <article  ref={aboutMeRef} className={styles.aboutMe1} style={{opacity:`${imageFadeIn}`}}>About Daytime Nick</article>
+      <article  ref={aboutMeRef} className={styles.aboutMe1} style={orientation.current === "landscape-primary" || orientation.current === "landscape-secondary" ? {opacity:`${imageFadeIn}`} : {}}>About Daytime Nick</article>
       <MainArticle/>
       <section ref={projectsRef}></section>
       <h6 className={styles.subTitle1}>A Few Projects I Have Worked On</h6>
