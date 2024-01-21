@@ -30,11 +30,10 @@ export default function Article({src, alt, width, height, game, paragraph, style
             className={styles.image}
         />
       </Link>
-        <article>
+        <article className={styles.textInfo}>
             <p className={styles.gameTitle}>
               {game}
             </p>
-            <br/>
             {paragraph}
             <br/>
             <br/>

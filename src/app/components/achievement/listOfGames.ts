@@ -50,7 +50,7 @@ export const listOfGames: Games[] = [
         src: theFinalsImage,
         alt: "TBD rank in The Finals",
         width: 100,
-        height: 100,
+        height: 0,
         game: 'The Finals',
         paragraph: `A game developed by Embark Studios, is a fast paced first-person shooter where teams of three compete against each other for objectives. Currently grinding to be placed into a rank `,
         styleName: "rank",

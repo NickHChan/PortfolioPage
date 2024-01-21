@@ -67,12 +67,15 @@ export default function Project({src, alt, width, height, webLink, frameWork, la
           <p className={styles.summary1}>
             {project_summary}
           </p>
+          <br/>
           <p className={styles.summary2}>
             {project_summary2}
           </p>
+          <br/>
           <p className={styles.summary3}>
             {project_summary3}
           </p>
+          <br/>
           <p className={styles.summary4}>
             {project_summary4}
           </p>

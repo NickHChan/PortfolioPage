@@ -30,6 +30,8 @@
     gap: 2rem;
 }
 .linkContainer{
+    margin-top: 10%;
+    margin-left: 4%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,7 +69,8 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 43%;
+    margin-top: 1.2%;
+    top: 45%;
     left: 62%;
     height: 50px;
     width: 70px;

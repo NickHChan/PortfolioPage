@@ -77,7 +77,7 @@
     margin-top: 0.4%;
     margin-left: 0.95%;
     letter-spacing: 2px;
-    color: rgb(255, 248, 199);
+    color: #fff8c7;
 }
 .tech1 p {
     font-size: 0.95rem;
@@ -91,7 +91,7 @@
     margin-top: 0.4%;
     margin-left: 0.95%;
     letter-spacing: 2px;
-    color: #b3b3f5;
+    color: #b9b9e6;
 }
 .NextJS,
 .Vercel{
@@ -101,15 +101,15 @@
 .Typescript,
 .Css{
     -webkit-text-stroke: 0.2px black;
-    color: rgb(0, 110, 255) !important;
+    color: rgb(116, 176, 255) !important;
 }
 .Tailwind{
     -webkit-text-stroke: 0.2px black;
     color: rgb(106, 255, 255) !important; 
 }
 .Sass{
-    -webkit-text-stroke: 0.3px black;
-    color: rgb(224, 55, 207)!important;
+    -webkit-text-stroke: 0.2px black;
+    color: rgb(225, 107, 214)!important;
 }
 .Javascript{
     -webkit-text-stroke: 0.2px black;
@@ -124,12 +124,15 @@
     line-height: 1.1rem;
     width: 500px;
 }
+.summaryContainer0{
+    color: #3b3929;
+}
 .summaryContainer1{
     color: white;
 }
 .summaryContainer2{
     -webkit-text-stroke: 0.2px #b3b3f5;
-    color: white;
+    color: #dcdcf8;;
 }
 .summary1,
 .summary2,
