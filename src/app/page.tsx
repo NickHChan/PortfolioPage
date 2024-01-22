@@ -39,7 +39,7 @@ export default function Home() {
       let yMax = Math.floor(window.screenY / 100)
       let imageFadeOutNumber = (((yMax+100) - (yPosition * 18)))
       let imageSlideOutFadeNumber = (((yMax+100)-(yPosition * 48) )/100)
-      let imageSlideOutNumber = (((yMax+60) - (yPosition * 330)))
+      let imageSlideOutNumber = (((yMax+60) - (yPosition * 380)))
       let imageFadeInNumber = (((yPosition * 30) -(yMax+100))/100)
       let newNum = ((yMax - yPosition) * 1.5) + 90;
       setImageFadeOut(imageFadeOutNumber)
