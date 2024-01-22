@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next'
 import Head from 'next/head'
 import './globals.css'
@@ -34,7 +35,7 @@ export default function RootLayout({
       <head>
       <meta name="viewport" content="viewport-fit=cover, initial-scale=1.0" />
       </head>
-      <body className={`${roboto.className}${sortsMillGoudy.className}`}>
+      <body className={`${roboto.className} ${sortsMillGoudy.className}`}>
         <ThemeProvider>
         <ScrollProvider>
           <NavBar />
