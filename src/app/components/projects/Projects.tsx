@@ -17,7 +17,7 @@ export default function Projects() {
 
   const x = useTransform(scrollYProgress,[0,1],['1%', '-120%'])
   const skewVelocity = useVelocity(scrollYProgress)
-  const skew = useTransform(skewVelocity,[-1,-0.5,0,0.5,1],['10deg','5deg','0deg','-5deg','-10deg'],{ease: easeInOut})
+  const skew = useTransform(skewVelocity,[-1,-0.5,0,0.5,1],['5deg','3deg','0deg','-3deg','-5deg'],{ease: easeInOut})
   const orientation = useRef<OrientationTypes>();
 
   useEffect(()=>{
