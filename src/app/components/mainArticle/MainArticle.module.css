@@ -2,12 +2,12 @@
 .main{
     max-width: 900px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: space-around;
-    gap: 2rem;
     font-size: 1.5rem;
-    line-height: 2.5rem;
+    line-height: 1.5rem;
 }
 .main p {
     margin-top: 25px;
