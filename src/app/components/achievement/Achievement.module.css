@@ -1,7 +1,6 @@
 .achievenmentGrid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
     grid-template-areas:
         "one two three four";
     gap: 2rem;

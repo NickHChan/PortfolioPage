@@ -85,7 +85,7 @@ export default function Home() {
           src={headerPic}
           alt='Picture of my name Nick Chan'
           height={400}
-          width={500}
+          width={300}
           quality={100}
           className={styles.headerPic}
           />

@@ -1,13 +1,12 @@
 
 import type { Metadata } from 'next'
-import Head from 'next/head'
 import './globals.css'
 import NavBar from './components/navBar/NavBar'
 import {ScrollProvider} from './helper/scrollToContext'
 import {ThemeProvider} from './helper/themeContext'
 import Footer from './components/footer/Footer'
 import { Analytics } from '@vercel/analytics/react'
-import { Montserrat, Roboto} from 'next/font/google'
+import {Roboto} from 'next/font/google'
 import { Sorts_Mill_Goudy } from 'next/font/google'
 
 const roboto = Roboto({
@@ -33,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <meta name="viewport" content="viewport-fit=cover, initial-scale=1.0" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
       </head>
       <body className={`${roboto.className} ${sortsMillGoudy.className}`}>
         <ThemeProvider>

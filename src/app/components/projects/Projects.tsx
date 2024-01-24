@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './project.module.css'
 import { listOfProjects } from './listOfProjects'
 import ProjectBase from '../reuse/Projectbase'
@@ -14,12 +14,11 @@ export default function Projects() {
   const {scrollYProgress} = useScroll({
     target: targetRef
   })
-
   const x = useTransform(scrollYProgress,[0,1],['1%', '-120%'])
   const skewVelocity = useVelocity(scrollYProgress)
   const skew = useTransform(skewVelocity,[-1,-0.5,0,0.5,1],['5deg','3deg','0deg','-3deg','-5deg'],{ease: easeInOut})
   const orientation = useRef<OrientationTypes>();
-
+  
   useEffect(()=>{
     orientation.current = window.screen.orientation.type;
   },[orientation])
@@ -27,7 +26,7 @@ export default function Projects() {
   return (
     <div ref={targetRef} className={styles.projectBody}>
       <div className={styles.stickyBody}>
-        <motion.div style={ orientation.current === "landscape-primary" || orientation.current === "landscape-secondary" ? {x, skew} : {} } className={styles.projectInfoContainer}>
+        <motion.div style={ orientation.current === 'landscape-primary' || orientation.current === 'landscape-secondary'  ? {x, skew} : {} } className={styles.projectInfoContainer}>
           {
             listOfProjects.map((project, i) => {
               return(

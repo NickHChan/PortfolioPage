@@ -5,7 +5,7 @@
 }
 .contactMeBody{
     display: flex;
-    width: 100%;
+    width: 90%;
     height: 340px;
     flex-direction: column;
     align-items: center;
@@ -24,7 +24,7 @@
     color: rgb(0, 0, 0);;
 }
 .contactInfo{
-    width: 550px;
+    width: 100px;
     display: flex;
     justify-content: space-evenly;
     gap: 2rem;
@@ -149,7 +149,7 @@
 @media (max-width: 768px) {
     .image{
         height: 200px;
-        width: 200px;
+        width: 70%;
     }
     .title{
         font-size: 1rem;
@@ -165,13 +165,10 @@
         gap: 0;
     }
 }
-@media (max-width: 360px){
-
-}
 
 @media(orientation:portrait) {
     .contactMeBody{
-        width: 400px;
+        width: 100%;
     }
     .image{
         height: 100px;

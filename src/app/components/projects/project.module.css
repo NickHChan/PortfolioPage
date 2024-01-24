@@ -64,7 +64,6 @@
 @media (max-width: 768px) {
     .stickyBody{
         height: 820px;
-        width: 2000px;
     }
     .projectInfoContainer{
         gap: 200px;
@@ -81,7 +80,6 @@
     }
     .projectInfoContainer{
         flex-direction: column;
-        gap: 50px;
-        left: 41.7%;
+        left: 5%;
     }
 }

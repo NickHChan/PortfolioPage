@@ -17,6 +17,7 @@ export default function SongArtist() {
                     width={game.width}
                     height={game.height}
                     game={game.name}
+                    abbv={game.abbv}
                     paragraph={game.paragraph}
                     styleName={game.styleName}
                     />
