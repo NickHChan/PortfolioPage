@@ -8,7 +8,8 @@ interface Artist {
     width: number;
     height: number;
     name: string;
-    paragraph: string;
+    abbv: string;
+    paragraph: string[];
     styleName: string;
     url: string;
 }
@@ -20,7 +21,8 @@ export const listOfGames: Artist[] = [
         width: 180,
         height: 180,
         name: 'Infected Mushroom',
-        paragraph: "A musical duo formed by producers Erez Eisen and Amit Duvdevani. They produce and perform psytrance, electronica, dream trance and psychedelic music.",
+        abbv: 'Infected Mushroom',
+        paragraph: ["A musical duo formed by producers Erez Eisen and Amit Duvdevani. They produce and perform psytrance, electronica, dream trance and psychedelic music."],
         styleName: "band",
         url: 'https://open.spotify.com/artist/6S2tas4z6DyIklBajDqJxI',
     }

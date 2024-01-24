@@ -10,14 +10,15 @@ type Props = {
     width:number;
     height:number;
     game: string;
-    paragraph: string;
+    abbv: string;
+    paragraph: string[];
     styleName: string;
     addtional?: string;
     url: string;
 }
 
 
-export default function Article({src, alt, width, height, game, paragraph, styleName, addtional, url}:Props) {
+export default function Article({src, alt, width, height, game, abbv, paragraph, styleName, url}:Props) {
   return (
     <article className={styles[styleName]}>
       <Link href={url} rel='noopener noreferrer' target='_blank' className={styles.link} >
@@ -34,10 +35,15 @@ export default function Article({src, alt, width, height, game, paragraph, style
             <p className={styles.gameTitle}>
               {game}
             </p>
-            {paragraph}
-            <br/>
-            <br/>
-            {addtional}
+              {
+              paragraph.map((sentence, i) => {
+                return(
+                  <p key={i} className={ i == 2 ? `${styles.paragraph} ${styles[abbv]}` : `${styles.paragraph}`}>
+                    {sentence}
+                  </p>
+                )
+              })
+              }
         </article>
     
     </article>

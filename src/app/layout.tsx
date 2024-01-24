@@ -1,13 +1,12 @@
 
 import type { Metadata } from 'next'
-import Head from 'next/head'
 import './globals.css'
 import NavBar from './components/navBar/NavBar'
 import {ScrollProvider} from './helper/scrollToContext'
 import {ThemeProvider} from './helper/themeContext'
 import Footer from './components/footer/Footer'
 import { Analytics } from '@vercel/analytics/react'
-import { Montserrat, Roboto} from 'next/font/google'
+import {Roboto} from 'next/font/google'
 import { Sorts_Mill_Goudy } from 'next/font/google'
 
 const roboto = Roboto({
