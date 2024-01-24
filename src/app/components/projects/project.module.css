@@ -42,15 +42,17 @@
     }
 }
 
-@media (max-width: 360px){
+@media (orientation:portrait){
     .projectBody{
-        margin-top: 200%;
+        height: 5000px;
+        min-width: 360px;
     }
     .stickyBody{
-        height: 5100px;
+        height: 5000px;
+        
     }
     .projectInfoContainer{
         flex-direction: column;
-        left: 5%;
+        left: 3%;
     }
 }
