@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './project.module.css'
 import { listOfProjects } from './listOfProjects'
 import ProjectBase from '../reuse/Projectbase'

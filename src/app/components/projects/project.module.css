@@ -20,48 +20,19 @@
     margin-bottom: 4.5%;
 
 }
-@media (width:1920px){
+
+@media(max-width: 3440px){
     .stickyBody{
-        height: 1055px;
+        height: 1400px;
     }
 }
-@media (max-width: 1536px){
+@media (max-width: 1920px){
     .stickyBody{
-        height: 820px;
-    }
-}
-@media (max-width: 1440px){
-    .stickyBody{
-        height: 920px;
+        height: 1050px;
     }
 }
 
-@media (max-width: 1366px){
-    .stickyBody{
-        height: 910px;
-    }
-}
-
-@media (max-width: 1280px){
-    .projectInfoContainer{
-        left: 36.6%;
-    }
-    .stickyBody{
-        height: 800px;
-    }
-}
-/* lg */
-@media (max-width: 1024px) {
-    .projectInfoContainer{
-        left: 36.6%
-    }
-    .stickyBody{
-        height: 695px;
-    }
-}
-
-/* md */
-@media (max-width: 768px) {
+@media(max-width: 1600px){
     .stickyBody{
         height: 820px;
     }
@@ -71,9 +42,9 @@
     }
 }
 
-@media (orientation:portrait){
+@media (max-width: 360px){
     .projectBody{
-        height: 5100px;
+        margin-top: 200%;
     }
     .stickyBody{
         height: 5100px;

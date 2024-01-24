@@ -182,7 +182,7 @@
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 850px){
     .projects{
         width: 600px;
         height: 550px;
@@ -208,22 +208,23 @@
     }
 }
 
-@media(orientation:portrait){
+@media(max-width: 360px){
     .projects{
-        width: 350px;
+        width: 299px;
         height: 1300px;
+        margin-left: 1%;
     }
     .header{
         color: white;
-    }
-    .summaryContainer0{
-        color: #fff8c7;
     }
     .projectInfoContainer{
         flex-direction: column;
     }
     .image{
         width: 330px;
+    }
+    .summaryContainer0{
+        color: #faef9a;
     }
     .summaryContainer0,
     .summaryContainer1,
