@@ -46,6 +46,7 @@
     .projectBody{
         height: 5000px;
         min-width: 360px;
+        margin-top: 300px;
     }
     .stickyBody{
         height: 5000px;
@@ -53,6 +54,6 @@
     }
     .projectInfoContainer{
         flex-direction: column;
-        left: 3%;
+        left: 5%;
     }
 }
