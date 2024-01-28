@@ -104,13 +104,13 @@ export default function Home() {
       <article  ref={aboutMeRef} className={styles.aboutMe1} style={orientation.current === "landscape-primary" || orientation.current === "landscape-secondary" ? {opacity:`${imageFadeIn}`} : {}}>About Daytime Nick</article>
       <MainArticle/>
       <section ref={projectsRef}></section>
-      <h6 className={styles.subTitle1}>A Few Projects I Have Worked On</h6>
+      <h2 className={styles.subTitle1}>A Few Projects I Have Worked On</h2>
       <Projects/>
       <article className={styles.aboutMe2} >About Nighttime Nick</article>
       <NightArticle/>
-      <h6 className={styles.subTitle2} ref={achievementRef}>My Gaming Achievements</h6>
+      <h2 className={styles.subTitle2} ref={achievementRef}>My Gaming Achievements</h2>
       <Achievement/>
-      <h6 className={styles.subTitle3}>My Favourite Music Artists</h6>
+      <h2 className={styles.subTitle3}>My Favourite Music Artists</h2>
       <SongArtist/>
       <section ref={contactMeRef}></section>
       <ContactMe/>
