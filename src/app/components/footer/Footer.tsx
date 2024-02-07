@@ -104,6 +104,8 @@ const subMenuAnimation3 = {
 }
   return (
     <footer className={styles.footer}>
+        <div>
+
           <motion.div
             initial = 'close'
             animate={isHover ? 'show' : 'close'}
@@ -157,6 +159,7 @@ const subMenuAnimation3 = {
                 }}
                 >+</motion.div>
         </motion.div>
+        </div>
     </footer>
   )
 }
