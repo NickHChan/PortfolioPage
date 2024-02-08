@@ -7,7 +7,7 @@
     align-items: flex-end;
     bottom: 9rem;
     z-index: 100;
-    left: 5rem;
+    left: 1rem;
 }
 
 .hoverMenu{
@@ -63,9 +63,15 @@
     color: rgb(233, 94, 233);
 }
 
+@media (max-width: 1920px){
+    .footer{
+        left: 3.9rem;
+    }
+}
+
 @media (max-width: 1366px){
     .footer{
-        left: 1.4rem;
+        left: 1.6rem;
     }
     .hoverMenu{
         right: 4.3rem;
@@ -74,7 +80,7 @@
 
 @media (max-width: 1440px){
     .footer{
-        left: 0.9rem;
+        left: 1.5rem;
     }
 }
 
@@ -99,17 +105,20 @@
 
 @media (max-width: 1024px){
     .footer{
-        left: -0.4rem;
+        left: 0;
+    }
+    .hoverMenu{
+        left: 2rem;
     }
 }
 
 @media (max-width: 768px){
     .footer{
-        left: 1rem;
+        left: 1.5rem;
         bottom: 17rem;
     }
     .hoverMenu{
-        right: 0.8rem;
+        left: 1.3rem;
     }
     .dayButton,
     .nightButton{
@@ -119,8 +128,11 @@
 
 @media (max-width: 412px){
     .footer{
-        left: 1.2rem;
+        left: 1rem;
         bottom: 10rem;
+    }
+    .hoverMenu{
+        left: 1.3rem;
     }
 } 
 

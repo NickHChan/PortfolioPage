@@ -59,3 +59,8 @@
         top: 17rem;
     }
 }
+@media (max-width: 320px){
+    .navBody{
+        top: 5rem
+    }
+}
