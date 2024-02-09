@@ -35,12 +35,12 @@
 
 @media (width: 1920px){
     .navBody{
-        left: 13rem;
+        left: 12rem;
     }
 }
 @media(width:1536px){
     .navBody{
-        left: 9.5rem;
+        left: 9.5srem;
     }
 }
 
