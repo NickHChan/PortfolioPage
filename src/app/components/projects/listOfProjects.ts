@@ -57,7 +57,7 @@ export const listOfProjects: Projects[] = [
         This project honed my skills in front-end web development and API integration.`,
         role: 'Solo-Developer Work',
         webLink: 'https://www.cinetrainer.com/',
-        linkworks: false
+        linkworks: true
     },
 
     {
