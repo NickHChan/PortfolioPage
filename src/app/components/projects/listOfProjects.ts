@@ -56,7 +56,7 @@ export const listOfProjects: Projects[] = [
         project_summary4: `The website effectively provides a platform for users to enhance their movie knowledge, making them more competitive in Cine2Nerdle Battle. \n
         This project honed my skills in front-end web development and API integration.`,
         role: 'Solo-Developer Work',
-        webLink: '',
+        webLink: 'https://www.cinetrainer.com/',
         linkworks: false
     },
 
